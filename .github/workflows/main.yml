@@ -39,5 +39,6 @@ jobs:
         ARGS: "-avz --delete"
         SOURCE: "./docs"
         REMOTE_HOST: "wtfu.site"
+        REMOTE_PORT: ${{ secrets.DOCS_REMOTE_PORT }}
         REMOTE_USER: ${{ secrets.DOCS_USER }}
         TARGET: ${{ secrets.DOCS_TARGET_DIR }}
