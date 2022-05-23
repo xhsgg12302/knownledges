@@ -1,0 +1,37 @@
+name: GitHub Actions Build and Deploy Demo
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+      
+    # 使用 node:10
+    - name: use Node.js 10
+      uses: actions/setup-node@v1
+      with:
+        node-version: 10
+        
+    # npm install
+    - name: npm install and build
+      run: |
+        npm install
+        npm run build
+        npm i docsify-cli -g
+        docsify init ./docs
+      env:
+        CI: true
+        
+    - name: Deploy
+      uses: easingthemes/ssh-deploy@v2.0.7
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.ACCESS_TOKEN }}
+        ARGS: "-avz --delete"
+        SOURCE: "[Current File Dir]"
+        REMOTE_HOST: "[Domain]"
+        REMOTE_USER: "[UserName]"
+        TARGET: "[Server Dir]"
