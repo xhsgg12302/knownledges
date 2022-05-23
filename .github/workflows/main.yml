@@ -9,20 +9,6 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@master
-      
-    # 使用 node:10
-    - name: use Node.js 10
-      uses: actions/setup-node@v1
-      with:
-        node-version: 10
-        
-    # npm install
-    - name: npm install and build
-      run: |
-        npm i docsify-cli -g
-        docsify init ./
-      env:
-        CI: true
         
     - name: Deploy
       uses: easingthemes/ssh-deploy@v2.2.11
