@@ -24,6 +24,9 @@ jobs:
         npm i docsify-cli -g
         docsify init ./docs
         ls ./docs
+        
+        cat ./docs/README.md
+        cat ./docs/index.html
       env:
         CI: true
         
