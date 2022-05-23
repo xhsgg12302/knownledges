@@ -1,4 +1,4 @@
-name: GitHub Actions Build and Deploy Demo
+name: deploy mardown files to VPS[CVM]
 on:
   push:
     branches:
@@ -19,15 +19,9 @@ jobs:
     # npm install
     - name: npm install and build
       run: |
-        # npm install
-        # npm run build
         npm i docsify-cli -g
         docsify init ./docs
-        ls ./docs
         pwd ./docs
-        
-        cat ./docs/README.md
-        cat ./docs/index.html
         
       env:
         CI: true
