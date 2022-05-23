@@ -23,6 +23,7 @@ jobs:
         # npm run build
         npm i docsify-cli -g
         docsify init ./docs
+        ls ./docs
       env:
         CI: true
         
