@@ -27,6 +27,9 @@ jobs:
         
         cat ./docs/README.md
         cat ./docs/index.html
+        
+        ls ./docs
+        
       env:
         CI: true
         
