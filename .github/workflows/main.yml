@@ -31,7 +31,7 @@ jobs:
       env:
         SSH_PRIVATE_KEY: ${{ secrets.DOCS_ACCESS_TOKEN }}
         ARGS: "-avz --delete"
-        SOURCE: "./docs"
+        SOURCE: "./"
         REMOTE_HOST: "wtfu.site"
         REMOTE_PORT: ${{ secrets.DOCS_REMOTE_PORT }}
         REMOTE_USER: ${{ secrets.DOCS_USER }}
