@@ -27,10 +27,11 @@ jobs:
     - name: Deploy
       uses: easingthemes/ssh-deploy@v2.2.11
       env:
-        SSH_PRIVATE_KEY: ${{ secrets.DOCS_ACCESS_TOKEN }}
         ARGS: "-avz --delete"
+        EXCLUDE: "/.git/, /.github/"
         SOURCE: "./"
         REMOTE_HOST: "wtfu.site"
+        SSH_PRIVATE_KEY: ${{ secrets.DOCS_ACCESS_TOKEN }}
         REMOTE_PORT: ${{ secrets.DOCS_REMOTE_PORT }}
         REMOTE_USER: ${{ secrets.DOCS_USER }}
         TARGET: ${{ secrets.DOCS_TARGET_DIR }}
