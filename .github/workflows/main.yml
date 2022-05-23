@@ -20,9 +20,7 @@ jobs:
     - name: npm install and build
       run: |
         npm i docsify-cli -g
-        docsify init ./docs
-        pwd ./docs
-        
+        docsify init ./
       env:
         CI: true
         
