@@ -35,9 +35,9 @@ jobs:
     - name: Deploy
       uses: easingthemes/ssh-deploy@v2.0.7
       env:
-        SSH_PRIVATE_KEY: ${{ secrets.ACCESS_TOKEN }}
+        SSH_PRIVATE_KEY: ${{ secrets.DOCS_ACCESS_TOKEN }}
         ARGS: "-avz --delete"
-        SOURCE: "[Current File Dir]"
-        REMOTE_HOST: "[Domain]"
-        REMOTE_USER: "[UserName]"
-        TARGET: "[Server Dir]"
+        SOURCE: "./docs"
+        REMOTE_HOST: "wtfu.site"
+        REMOTE_USER: ${{ secrets.DOCS_USER }}
+        TARGET: ${{ secrets.DOCS_TARGET_DIR }}
