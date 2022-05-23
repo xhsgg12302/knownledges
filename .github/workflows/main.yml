@@ -24,11 +24,10 @@ jobs:
         npm i docsify-cli -g
         docsify init ./docs
         ls ./docs
+        pwd ./docs
         
         cat ./docs/README.md
         cat ./docs/index.html
-        
-        ls ./docs
         
       env:
         CI: true
