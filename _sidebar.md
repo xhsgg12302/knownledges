@@ -4,7 +4,7 @@
   	+ [AQS](base/AQS.md)
 	+ [EXCEPTION](exception/exception.md)
 
-  - [JVM](jvm/jvm.md)
+  - [JVM](JVM/jvm.md)
   - [REDIS](redis/redis.md)
   - [ZOOKEEPER](zookeeper/zk.md)
   - [ACTIVEMQ](activemq/acmq.md)
