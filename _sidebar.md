@@ -2,7 +2,7 @@
 
   - BASE
   	+ [AQS](base/AQS.md)
-	+ [EXCEPTION](exception/exception.md)
+	+ [EXCEPTION](base/exception.md)
 
   - [JVM](JVM/jvm.md)
   - [REDIS](redis/redis.md)
