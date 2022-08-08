@@ -11,7 +11,7 @@
   - [NETTY](netty/netty.md)
   - ElasticSearch
   - TOMCAT
-  - NGINX
+  - [NGINX](nginx/nginx.md)
   - MYSQL
   - SPRING
   - SPRINGBOOT
