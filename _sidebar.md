@@ -25,7 +25,7 @@
 * 运维
   - [docker](docker/docker.md)
   - git
-  - maven
+  - [MAVEN](maven/maven.md)
   - k8s
 
 ---
