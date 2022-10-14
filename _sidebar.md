@@ -5,7 +5,7 @@
 	+ [EXCEPTION](docs/base/exception.md)
 	+ [THREADPOOL](docs/base/threadpoolexecutor.md)
 
-  - [JVM](docs/JVM/jvm.md)
+  - [JVM](docs/jvm/jvm.md)
   - [REDIS](docs/redis/redis.md)
   - [ZOOKEEPER](docs/zookeeper/zk.md)
   - [ACTIVEMQ](docs/activemq/acmq.md)
