@@ -3,6 +3,7 @@
 	- [BASE](docs/base/)
 		+ [OBJECT ORIENTED](docs/base/OO.md)
 		+ [IO STREAM](docs/base/IO.md)
+		+ [NETWORK](docs/base/network.md)
 		+ [THREAD](docs/base/thread.md)
 		+ [COLLECTION](docs/base/collection.md)
 		+ [EXCEPTION](docs/base/exception.md)
@@ -41,5 +42,5 @@
 
 * 其他
 	- [docsify文档](https://docsify.js.org/#/zh-cn/)
-	- [面试准备](docs/JVM/review-preparement.md)
+	- [面试准备](docs/jvm/review-preparement.md)
 

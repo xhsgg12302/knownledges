@@ -43,13 +43,13 @@
       if (isFunction(title)) {
 
         hook.afterEach(function (html) {
-          return generateHeader(title(vm.route.file)) + html
+          return html +  generateHeader(title(vm.route.file))
         })
       } else {
         var header = generateHeader(title)
 
         hook.afterEach(function (html) {
-          return header + html
+          return html + header
         })
       }
 
