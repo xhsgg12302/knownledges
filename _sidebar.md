@@ -41,6 +41,6 @@
 ---
 
 * 其他
-	- [docsify文档](https://docsify.js.org/#/zh-cn/)
+	- [DOCSIFY文档](https://docsify.js.org/#/zh-cn/)
 	- [面试准备](docs/jvm/review-preparement.md)
 
