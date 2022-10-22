@@ -1,4 +1,4 @@
-* 文档
+* DOCS
 
 	- [BASE](docs/base/)
 		+ [OBJECT ORIENTED](docs/base/OO.md)
@@ -31,7 +31,7 @@
 			+ [XXL-JOB](docs/dstb/schedule/xxl-job.md)
 
 ---
-* 运维
+* DevOps
 	- [NGINX](docs/nginx/nginx.md)
 	- [DOCKER](docs/docker/docker.md)
 	- [GIT](docs/git/git.md)
@@ -39,8 +39,18 @@
 	- [K8S](docs/k8s/k8s.md)
 
 ---
+* ALGORITHM
+    - [SORT](docs/algorithm/sort.md)
+    - [TREE](docs/algorithm/tree.md)
+    - [LINKED](docs/algorithm/linked.md)
+    - [ARRAY](docs/algorithm/array.md)
+    - [STACK](docs/algorithm/stack.md)
+    - [GRAPH](docs/algorithm/graph.md)
 
-* 其他
-	- [DOCSIFY文档](https://docsify.js.org/#/zh-cn/)
-	- [面试准备](docs/jvm/review-preparement.md)
+---
+* OTHER
+    - [DOCSIFY_DOC](https://docsify.js.org/#/zh-cn/)
+    - [REVIEW](docs/jvm/review-preparement.md)
+    - [HR_PROBLEM](docs/hr/hr.md)
+    - [CTO_PROBLEM](docs/hr/cto.md)
 
