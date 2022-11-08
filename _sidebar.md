@@ -17,13 +17,16 @@
     - [NETTY](docs/netty/netty.md)
     - [ELASTICSEARCH](docs/es/es.md)
     - [TOMCAT](docs/tomcat/tomcat.md)
-    - [MYSQL](docs/mysql/mysql.md)
     - [MYBATIS](docs/mybatis/mybatis.md)
     - [SPRING](docs/spring/spring.md)
     - [SPRINGMVC](docs/springmvc/springmvc.md)
     - [SPRINGBOOT](docs/springboot/springboot.md)
     - [SPRINTCLOUD](docs/springcloud/springcloud.md)
 
+    - [MYSQL](docs/mysql/README.md)
+        + [INSTALL](docs/mysql/install.md)
+        + [LEARNING_DOC](docs/mysql/mysql.md)
+        
     - [MQ](docs/mq/)
         + [ACTIVEMQ](docs/mq/activemq/acmq.md)
         + [KAFKA](docs/mq/kafka/kafka.md)
