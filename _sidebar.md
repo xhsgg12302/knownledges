@@ -74,7 +74,7 @@
 ---
 * OTHER
     - [DOCSIFY_DOC](https://docsify.js.org/#/zh-cn/)
-    - [REVIEW](docs/jvm/review-preparement.md)
+    - [REVIEW](docs/doc/jvm/review-preparement.md)
     - [HR_PROBLEM](docs/other/hr/hr.md)
     - [CTO_PROBLEM](docs/other/hr/cto.md)
 
