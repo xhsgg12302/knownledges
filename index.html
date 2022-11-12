@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
 	<link rel="stylesheet" href="dist/prismjs/themes/prism.css">
 	<link rel="stylesheet" href="dist/gitalk/dist/gitalk.css">
+	<!-- <link rel="stylesheet" href="dist/docsify-toc/toc.css"> -->
 </head>
 <body>
 	<div id="app"></div>
@@ -77,13 +78,20 @@
 					return this.origin.code.apply(this, arguments);
 				}
 			}
-		}
+		},
+		toc: {
+			scope: '.markdown-section',
+			headings: 'h2, h3, h4, h5, h6',
+			title: 'Table of Contents',
+		},
 	}
 	</script>
 	<!-- Docsify v4 -->
 	<script src="dist/docsify/lib/docsify.js"></script>
 	<script src="dist/docsify/lib/plugins/search.min.js"></script>
 	<script src="dist/docsify/lib/plugins/zoom-image.min.js"></script>
+	<!-- https://github.com/mrpotatoes/docsify-toc not complete, so comment-->
+	<!-- <script src="dist/docsify-toc/toc.js"></script> -->
 
 	<script src="dist/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
 	<script src="dist/prismjs/components/prism-java.min.js"></script>

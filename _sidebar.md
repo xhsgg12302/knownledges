@@ -26,6 +26,7 @@
     - [MYSQL](docs/doc/mysql/README.md)
         + [INSTALL](docs/doc/mysql/install.md)
         + [LEARNING_DOC](docs/doc/mysql/mysql.md)
+        + [ADVANCE](docs/doc/mysql/adv.md)
         
     - [MQ](docs/doc/mq/)
         + [ACTIVEMQ](docs/doc/mq/activemq/acmq.md)
