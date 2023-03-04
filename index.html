@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
 	<link rel="stylesheet" href="dist/prismjs/themes/prism.css">
 	<link rel="stylesheet" href="dist/gitalk/dist/gitalk.css">
+	<link rel="stylesheet" href="dist/docsify-sidebar-collapse/sidebar-folder.min.css">
 	<!-- <link rel="stylesheet" href="dist/docsify-toc/toc.css"> -->
 </head>
 <body>
@@ -27,7 +28,8 @@
 		loadNavbar: true,
 		// loadNavbar: '_navbar.md',
 		// maxLevel: 5,
-		subMaxLevel: 2,
+		subMaxLevel: 0,
+		sidebarDisplayLevel: 1,
 		themeColor: '#3F51B5',
 		// mergeNavbar: true,
 		//auto2top: true,
@@ -100,6 +102,9 @@
 	<script src="dist/prismjs/components/prism-nginx.min.js"></script>
 	<script src="dist/prismjs/components/prism-sql.js"></script>
 	<script src="dist/prismjs/components/prism-yaml.min.js"></script>
+
+	<!-- auto collapse tree -->
+	<script src="dist/docsify-sidebar-collapse/docsify-sidebar-collapse.min.js">s</script>
 
 	<!-- 
 	<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
