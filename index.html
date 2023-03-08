@@ -1,126 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>knownledges</title>
-	<link rel="icon" href="/icon.png">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="dist/docsify/lib/themes/vue.css">
-	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
-	<link rel="stylesheet" href="dist/prismjs/themes/prism.css">
-	<link rel="stylesheet" href="dist/gitalk/dist/gitalk.css">
-	<link rel="stylesheet" href="dist/docsify-sidebar-collapse/sidebar-folder.min.css">
-	<!-- <link rel="stylesheet" href="dist/docsify-toc/toc.css"> -->
-</head>
-<body>
-	<div id="app"></div>
-	<script src="dist/docsify-edit-on-github/index.js"></script>
-	<script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-	<script>
-	var num = 0;
-	mermaid.initialize({ startOnLoad: false });
-	window.$docsify = {
-		name: 'knownledges',
-		repo: 'xhsgg12302/knownledges',
-		loadSidebar: true,
-		//loadSidebar: '_sidebar.md',
-		loadNavbar: true,
-		// loadNavbar: '_navbar.md',
-		// maxLevel: 5,
-		subMaxLevel: 0,
-		sidebarDisplayLevel: 1,
-		themeColor: '#3F51B5',
-		// mergeNavbar: true,
-		//auto2top: true,
+	<head>
+		<meta charset="UTF-8">
+		<title>knownledges</title>
+		<link rel="icon" href="/icon.png">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="dist/docsify/lib/themes/vue.css">
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
+		<link rel="stylesheet" href="dist/prismjs/themes/prism.css">
+		<link rel="stylesheet" href="dist/gitalk/dist/gitalk.css">
+		<link rel="stylesheet" href="dist/docsify-sidebar-collapse/sidebar-folder.min.css">
+		<link rel="stylesheet" href="dist/docsify-toc/toc.css">
+	</head>
+	<body>
+		<div id="app"></div>
+		<script src="dist/docsify-edit-on-github/index.js"></script>
+		<script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+		<script>
+		var num = 0;
+		mermaid.initialize({ startOnLoad: false });
+		window.$docsify = {
+			name: 'knownledges',
+			repo: 'xhsgg12302/knownledges',
+			loadSidebar: true,
+			//loadSidebar: '_sidebar.md',
+			loadNavbar: true,
+			// loadNavbar: '_navbar.md',
+			// maxLevel: 5,
+			subMaxLevel: 0,
+			sidebarDisplayLevel: 1,
+			themeColor: '#3F51B5',
+			// mergeNavbar: true,
+			//auto2top: true,
 
-		alias: {
-			'/.*/_sidebar.md': '/_sidebar.md',
-			'/.*/_navbar.md': '/_navbar.md'
-		},
-
-		search: {
-			noData: {
-			'/': 'No results!',
-			'/zh-cn/': 'No results!',
-			'/zh-tw/': 'No results!',
+			alias: {
+				'/.*/_sidebar.md': '/_sidebar.md',
+				'/.*/_navbar.md': '/_navbar.md'
 			},
-			paths: 'auto',
-			placeholder: {
-			'/': 'search',
-			'/zh-cn/': 'search',
-			'/zh-tw/': 'search',
-			}
-		},
-	
-		plugins: [
-			EditOnGithubPlugin.create(
-				'https://github.com/xhsgg12302/knownledges/blob/master/',
-			),
-			function(hook) {
-			  var footer = [
-				'<hr/>',
-				'<footer> Copyright © 2022 · wtfu.site · 12302 <br/> </footer>'
-			  ].join('');
 
-			  hook.afterEach(function(html) {
-				  const subscription = ``;
-				  return html + footer+subscription;
-			  });
-			}
-		],
-		markdown: {
-			renderer: {
-				code: function(code, lang) {
-					if (lang === "mermaid") {
-						return (
-								'<div class="mermaid">' + mermaid.render('mermaid-svg-' + num++, code) + "</div>"
-						);
-					}
-					return this.origin.code.apply(this, arguments);
+			search: {
+				noData: {
+				'/': 'No results!',
+				'/zh-cn/': 'No results!',
+				'/zh-tw/': 'No results!',
+				},
+				paths: 'auto',
+				placeholder: {
+				'/': 'search',
+				'/zh-cn/': 'search',
+				'/zh-tw/': 'search',
 				}
+			},
+
+			markdown: {
+				renderer: {
+					code: function(code, lang) {
+						if (lang === "mermaid") {
+							return (
+									'<div class="mermaid">' + mermaid.render('mermaid-svg-' + num++, code) + "</div>"
+							);
+						}
+						return this.origin.code.apply(this, arguments);
+					}
+				}
+			},
+			
+			toc: {
+				scope: '.markdown-section',
+				headings: 'h2, h3, h4',
+				title: 'TOC',
+			},
+			
+			tabs: {
+				persist    : true,      // default
+				sync       : true,      // default
+				theme      : 'material', // default
+				tabComments: true,      // default
+				tabHeadings: true       // default
+			},
+
+			plugins: [
+				EditOnGithubPlugin.create(
+					'https://github.com/xhsgg12302/knownledges/blob/master/',
+				),
+				function(hook) {
+				var footer = [
+					'<hr/>',
+					'<footer> Copyright © 2022 · wtfu.site · 12302 <br/> </footer>'
+				].join('');
+
+				hook.afterEach(function(html) {
+					const subscription = ``;
+					return html + footer+subscription;
+				});
+				}
+			]
+		}
+		</script>
+		<!-- Docsify v4 -->
+		<script src="dist/docsify/lib/docsify.js"></script>
+		<script src="dist/docsify/lib/plugins/search.min.js"></script>
+		<script src="dist/docsify/lib/plugins/zoom-image.min.js"></script>
+		<!-- https://github.com/mrpotatoes/docsify-toc not complete, so comment-->
+		<script src="dist/docsify-toc/toc.js"></script>
+
+		<script src="dist/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+		<script src="dist/prismjs/components/prism-java.min.js"></script>
+		<script src="dist/prismjs/components/prism-bash.min.js"></script>
+		<script src="dist/prismjs/components/prism-docker.min.js"></script>
+		<script src="dist/prismjs/components/prism-nginx.min.js"></script>
+		<script src="dist/prismjs/components/prism-sql.js"></script>
+		<script src="dist/prismjs/components/prism-yaml.min.js"></script>
+
+		<!-- auto collapse tree -->
+		<script src="dist/docsify-sidebar-collapse/docsify-sidebar-collapse.min.js"></script>
+
+		<!-- docsify-tabs see: https://jhildenbiddle.github.io/docsify-tabs/#/ -->
+		<script src="dist/docsify-tabs/docsify-tabs-js.js"></script>
+		<style type="text/css">
+			pre {
+				border-radius: 8px;
+				background-color: #f3f2ee !important;
 			}
-		},
-		toc: {
-			scope: '.markdown-section',
-			headings: 'h2, h3, h4, h5, h6',
-			title: 'Table of Contents',
-		},
-	}
-	</script>
-	<!-- Docsify v4 -->
-	<script src="dist/docsify/lib/docsify.js"></script>
-	<script src="dist/docsify/lib/plugins/search.min.js"></script>
-	<script src="dist/docsify/lib/plugins/zoom-image.min.js"></script>
-	<!-- https://github.com/mrpotatoes/docsify-toc not complete, so comment-->
-	<!-- <script src="dist/docsify-toc/toc.js"></script> -->
+			.markdown-section pre {
+				padding-left: 0 !important;
+				padding-right: 0px !important;
+				box-shadow: 2px 1px 20px 2px #aaa;
+			}
+			:root {
+				--docsifytabs-border-color: #e0b6b6;
+				--docsifytabs-tab-highlight-color: rgb(4, 0, 128);
+			}
+		</style>
+		
+		<!-- 
+		<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+		<script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+		<script>
+		const gitalk = new Gitalk({
+			clientID: 'Github Application Client ID',
+			clientSecret: 'Github Application Client Secret',
+			repo: 'Github repo',
+			owner: 'Github repo owner',
+			admin: ['Github repo collaborators, only these guys can initialize github issues'],
+			// facebook-like distraction free mode
+			distractionFreeMode: false
+		})
+		</script>
+		-->
 
-	<script src="dist/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
-	<script src="dist/prismjs/components/prism-java.min.js"></script>
-	<script src="dist/prismjs/components/prism-bash.min.js"></script>
-	<script src="dist/prismjs/components/prism-docker.min.js"></script>
-	<script src="dist/prismjs/components/prism-nginx.min.js"></script>
-	<script src="dist/prismjs/components/prism-sql.js"></script>
-	<script src="dist/prismjs/components/prism-yaml.min.js"></script>
-
-	<!-- auto collapse tree -->
-	<script src="dist/docsify-sidebar-collapse/docsify-sidebar-collapse.min.js">s</script>
-
-	<!-- 
-	<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
-	<script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
-	<script>
-	  const gitalk = new Gitalk({
-	    clientID: 'Github Application Client ID',
-	    clientSecret: 'Github Application Client Secret',
-	    repo: 'Github repo',
-	    owner: 'Github repo owner',
-	    admin: ['Github repo collaborators, only these guys can initialize github issues'],
-	    // facebook-like distraction free mode
-	    distractionFreeMode: false
-	  })
-	</script>
-	-->
-
-</body>
+	</body>
 </html>

@@ -22,7 +22,7 @@ div#app {
   text-align: center;
 }
 div#app:empty::before {
-  content: 'Loading...';
+  content: 'Coming soon...';
 }
 .emoji {
   height: 1.2rem;
