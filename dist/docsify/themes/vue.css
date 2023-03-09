@@ -181,7 +181,7 @@ li input[type='checkbox'] {
   width: 80px;
 }
 main {
-  display: block;
+  display: none;
   position: relative;
   width: 100vw;
   height: 100%;
