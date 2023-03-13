@@ -17,10 +17,11 @@ var tocHeading = function(Title) {
 var aTag = function(src) {
   var a = document.createElement('a');
   var content = src.firstChild.innerHTML;
+  var content_text = src.firstChild.text;
 
   // Use this to clip text w/ HTML in it.
   // https://github.com/arendjr/text-clipper
-  a.innerHTML = content;
+  a.innerHTML = subString(content_text,23,true);
   a.href = src.firstChild.href;
   a.onclick = tocClick
 
@@ -29,6 +30,25 @@ var aTag = function(src) {
 
   return a
 };
+
+var subString = function(str,len, hasDot){
+  var newLength = 0;
+  var newStr = "";
+  var chineseRegex = /[^\x00-\xff]/g;
+  var singleChar = "";
+  for (var i = 0; i < len; i++) {
+      singleChar = str.charAt(i).toString();
+      if(singleChar.length == 0){break;}
+      if (singleChar.match(chineseRegex) != null) { newLength += 2; }
+      else { newLength++; }
+      if (newLength > len) {break;}
+      newStr += singleChar;
+  }
+  if (hasDot && newLength > len) {
+      newStr += "…";
+  }
+  return newStr;
+}
 
 var tocClick = function(e) {
   var divs = document.querySelectorAll('.page_toc .active');
