@@ -21,8 +21,9 @@ var aTag = function(src) {
 
   // Use this to clip text w/ HTML in it.
   // https://github.com/arendjr/text-clipper
-  a.innerHTML = subString(content_text,23,true);
+  a.innerHTML = content_text;
   a.href = src.firstChild.href;
+  a.title = content_text;
   a.onclick = tocClick
 
   // In order to remove this gotta fix the styles.

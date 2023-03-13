@@ -28,7 +28,7 @@
 			loadNavbar: true,
 			// loadNavbar: '_navbar.md',
 			// maxLevel: 5,
-			subMaxLevel: 0,
+			subMaxLevel: 1,
 			sidebarDisplayLevel: 1,
 			themeColor: '#3F51B5',
 			// mergeNavbar: true,
@@ -133,6 +133,14 @@
 			:root {
 				--docsifytabs-border-color: #e0b6b6;
 				--docsifytabs-tab-highlight-color: rgb(4, 0, 128);
+			}
+
+			aside a {
+				display: inline-block; /* 将a标签设为块级元素 */
+				white-space: nowrap; /* 不允许文本换行 */
+				overflow: hidden; /* 隐藏超出部分的文本 */
+				text-overflow: ellipsis; /* 超出部分用省略号代替 */
+				color: var(--text-color-base, black);
 			}
 		</style>
 		
