@@ -78,6 +78,7 @@
     - [MAVEN](docs/devops/maven/maven.md)
     - [K8S](docs/devops/k8s/k8s.md)
         + [MINIKUBE](docs/devops/k8s/minikube/minikube.md)
+        + [KUBEADM](docs/devops/k8s/kubeadm/kubeadm.md)
 
 ---
 * ALGORITHM
