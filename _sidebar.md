@@ -71,7 +71,12 @@
 ---
 * DevOps
     - [OS](docs/devops/os/)
-        + [SHELL](docs/devops/os/shell/command.md)
+        * [SHELL](docs/devops/os/)
+            + [SYNTAX](docs/devops/os/shell/syntax.md)
+            + [SHELL](docs/devops/os/shell/command.md)
+            + [RECORD](docs/devops/os/shell/record.md)
+        * [UTIL](docs/devops/os/)
+            + [FIND](docs/devops/os/util/find.md)
     - [NGINX](docs/devops/nginx/nginx.md)
     - [DOCKER](docs/devops/docker/docker.md)
     - [GIT](docs/devops/git/git.md)
