@@ -78,6 +78,8 @@
         * [UTIL](docs/devops/os/)
             + [FIND](docs/devops/os/util/find.md)
             + [CURL](docs/devops/os/util/curl.md)
+            + [GREP](docs/devops/os/util/grep.md)
+            + [FIREWALLD](docs/devops/os/util/firewalld.md)
     - [NGINX](docs/devops/nginx/nginx.md)
     - [DOCKER](docs/devops/docker/docker.md)
     - [GIT](docs/devops/git/git.md)
