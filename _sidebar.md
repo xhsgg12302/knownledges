@@ -84,7 +84,7 @@
     - [DOCKER](docs/devops/docker/docker.md)
     - [GIT](docs/devops/git/git.md)
     - [MAVEN](docs/devops/maven/maven.md)
-    - [K8S](docs/devops/k8s/README.md)
+    - [K8S](docs/devops/k8s/)
         + [SKELETON](docs/devops/k8s/skeleton.md)
         + [MINIKUBE](docs/devops/k8s/minikube.md)
         + [KUBEADM](docs/devops/k8s/kubeadm.md)
