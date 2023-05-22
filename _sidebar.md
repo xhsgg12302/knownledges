@@ -37,6 +37,7 @@
         + [INSTALL](docs/doc/advance/mysql/install.md)
         + [LEARNING_DOC](docs/doc/advance/mysql/mysql.md)
         + [ADVANCE](docs/doc/advance/mysql/adv.md)
+        + [RECORD](docs/doc/advance/mysql/record.md)
         
     - [MQ](docs/doc/advance/mq/)
         + [ACTIVEMQ](docs/doc/advance/mq/activemq/)
