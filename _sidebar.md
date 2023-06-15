@@ -74,6 +74,8 @@
     - [OS](docs/devops/os/)
         * [MAC OSX](docs/devops/os/)
             + [LAUNCHCTL](docs/devops/os/mac/launchctl.md)
+        * [WINDOWS](docs/devops/os/)
+            + [NETSH](docs/devops/os/win/netsh.md)
         * [SHELL](docs/devops/os/)
             + [SYNTAX](docs/devops/os/shell/syntax.md)
             + [SHELL](docs/devops/os/shell/command.md)
