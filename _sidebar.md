@@ -88,6 +88,7 @@
             + [SED](docs/devops/os/util/sed.md)
             + [NMAP](docs/devops/os/util/nmap.md)
             + [FIREWALLD](docs/devops/os/util/firewalld.md)
+            + [HASHCAT](docs/devops/os/util/hashcat.md)
     - [NGINX](docs/devops/nginx/nginx.md)
     - [DOCKER](docs/devops/docker/docker.md)
     - [GIT](docs/devops/git/git.md)
