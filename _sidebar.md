@@ -94,6 +94,7 @@
             + [FIREWALLD](docs/devops/os/util/firewalld.md)
             + [HASHCAT](docs/devops/os/util/hashcat.md)
             + [GunPG](docs/devops/os/util/GunPG.md)
+            + [VIM](docs/devops/os/util/vim.md)
     - [NGINX](docs/devops/nginx/nginx.md)
     - [DOCKER](docs/devops/docker/docker.md)
     - [GIT](docs/devops/git/git.md)
