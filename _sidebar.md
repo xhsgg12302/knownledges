@@ -82,6 +82,7 @@
             + [RECORD](docs/devops/os/shell/record.md)
         * [UTIL](docs/devops/os/)
             + [FIND](docs/devops/os/util/find.md)
+            + [XARGS](docs/devops/os/util/xargs.md)
             + [CURL](docs/devops/os/util/curl.md)
             + [GREP](docs/devops/os/util/grep.md)
             + [SED](docs/devops/os/util/sed.md)
