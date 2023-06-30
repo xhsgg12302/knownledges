@@ -90,6 +90,7 @@
             + [CURL](docs/devops/os/util/curl.md)
             + [GREP](docs/devops/os/util/grep.md)
             + [SED](docs/devops/os/util/sed.md)
+            + [AWK](docs/devops/os/util/awk.md)
             + [NMAP](docs/devops/os/util/nmap.md)
             + [FIREWALLD](docs/devops/os/util/firewalld.md)
             + [HASHCAT](docs/devops/os/util/hashcat.md)
