@@ -71,6 +71,9 @@
 
 ---
 * DevOps
+    - [SOFTWARE](docs/devops/softwares/)
+        * [IDEA](docs/devops/softwares/idea/)
+            + [ENV](docs/devops/softwares/idea/idea-env.md)
     - [OS](docs/devops/os/)
         * [MAC OSX](docs/devops/os/)
             + [LAUNCHCTL](docs/devops/os/mac/launchctl.md)
@@ -85,9 +88,6 @@
             + [SHELL](docs/devops/os/shell/command.md)
             + [RECORD](docs/devops/os/shell/record.md)
         * [UTIL](docs/devops/os/)
-            + [SOFTWARE](docs/devops/os/)
-                - [IDEA](docs/devops/os/util/softwares/idea/)
-                    + [ENV](docs/devops/os/util/softwares/idea/idea-env.md)
             + [FIND](docs/devops/os/util/find.md)
             + [XARGS](docs/devops/os/util/xargs.md)
             + [CURL](docs/devops/os/util/curl.md)
@@ -98,6 +98,7 @@
             + [FIREWALLD](docs/devops/os/util/firewalld.md)
             + [HASHCAT](docs/devops/os/util/hashcat.md)
             + [GunPG](docs/devops/os/util/GunPG.md)
+            + [OPENSSL](docs/devops/os/util/openssl.md)
             + [VIM](docs/devops/os/util/vim.md)
     - [NGINX](docs/devops/nginx/nginx.md)
     - [DOCKER](docs/devops/docker/docker.md)
