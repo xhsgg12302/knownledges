@@ -71,6 +71,9 @@
 
 ---
 * DevOps
+    - [SOFTWARE](docs/devops/softwares/)
+        * [IDEA](docs/devops/softwares/idea/)
+            + [ENV](docs/devops/softwares/idea/idea-env.md)
     - [OS](docs/devops/os/)
         * [MAC OSX](docs/devops/os/)
             + [LAUNCHCTL](docs/devops/os/mac/launchctl.md)
@@ -90,10 +93,12 @@
             + [CURL](docs/devops/os/util/curl.md)
             + [GREP](docs/devops/os/util/grep.md)
             + [SED](docs/devops/os/util/sed.md)
+            + [AWK](docs/devops/os/util/awk.md)
             + [NMAP](docs/devops/os/util/nmap.md)
             + [FIREWALLD](docs/devops/os/util/firewalld.md)
             + [HASHCAT](docs/devops/os/util/hashcat.md)
             + [GunPG](docs/devops/os/util/GunPG.md)
+            + [OPENSSL](docs/devops/os/util/openssl.md)
             + [VIM](docs/devops/os/util/vim.md)
     - [NGINX](docs/devops/nginx/nginx.md)
     - [DOCKER](docs/devops/docker/docker.md)
