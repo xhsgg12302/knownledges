@@ -78,6 +78,7 @@
         * [MAC OSX](docs/devops/os/)
             + [LAUNCHCTL](docs/devops/os/mac/launchctl.md)
             + [AUTOSSH](docs/devops/os/mac/auto-ssh.md)
+            + [BREW](docs/devops/os/mac/brew.md)
         * [LINUX](docs/devops/os/)
             + [AUTO_UP](docs/devops/os/linux/auto-up.md) 
             + [FILE_SIZE](docs/devops/os/linux/file-size.md) 
