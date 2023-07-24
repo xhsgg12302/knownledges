@@ -74,6 +74,7 @@
     - [SOFTWARE](docs/devops/softwares/)
         * [IDEA](docs/devops/softwares/idea/)
             + [ENV](docs/devops/softwares/idea/idea-env.md)
+            + [CLION](docs/devops/softwares/idea/clion-env.md)
     - [OS](docs/devops/os/)
         * [MAC OSX](docs/devops/os/)
             + [LAUNCHCTL](docs/devops/os/mac/launchctl.md)
