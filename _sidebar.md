@@ -122,7 +122,7 @@
     - [GRAPH](docs/algo/graph.md)
 
 ---
-* OTHER
+* [OTHER](docs/other/)
     - [DOCSIFY_DOC](https://docsify.js.org/#/zh-cn/)
     - [REVIEW](docs/other/hr/review-preparement.md)
     - [HR_PROBLEM](docs/other/hr/hr.md)
