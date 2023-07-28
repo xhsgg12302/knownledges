@@ -75,6 +75,7 @@
         * [JETBRAINS](docs/devops/softwares/jetbrains/)
             + [IDEA](docs/devops/softwares/jetbrains/idea-env.md)
             + [CLION](docs/devops/softwares/jetbrains/clion-env.md)
+        * [VISCOSITY](docs/devops/softwares/viscosity.md)
     - [OS](docs/devops/os/)
         * [MAC OSX](docs/devops/os/)
             + [LAUNCHCTL](docs/devops/os/mac/launchctl.md)
