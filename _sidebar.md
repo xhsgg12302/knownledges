@@ -71,6 +71,8 @@
 
 ---
 * DevOps
+    - [BUILD](docs/devops/build/)
+        * [CMAKE](docs/devops/build/cmake.md)
     - [SOFTWARE](docs/devops/softwares/)
         * [JETBRAINS](docs/devops/softwares/jetbrains/)
             + [IDEA](docs/devops/softwares/jetbrains/idea-env.md)
