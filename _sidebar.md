@@ -94,6 +94,7 @@
             + [SHELL](docs/devops/os/shell/command.md)
             + [RECORD](docs/devops/os/shell/record.md)
         * [UTIL](docs/devops/os/)
+            + [ADB](docs/devops/os/util/adb.md)
             + [FIND](docs/devops/os/util/find.md)
             + [XARGS](docs/devops/os/util/xargs.md)
             + [CURL](docs/devops/os/util/curl.md)
