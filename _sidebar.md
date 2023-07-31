@@ -73,6 +73,7 @@
 * DevOps
     - [BUILD](docs/devops/build/)
         * [CMAKE](docs/devops/build/cmake.md)
+        * [MAVEN](docs/devops/build/maven.md)
     - [SOFTWARE](docs/devops/softwares/)
         * [JETBRAINS](docs/devops/softwares/jetbrains/)
             + [IDEA](docs/devops/softwares/jetbrains/idea-env.md)
@@ -110,7 +111,6 @@
     - [NGINX](docs/devops/nginx/nginx.md)
     - [DOCKER](docs/devops/docker/docker.md)
     - [GIT](docs/devops/git/git.md)
-    - [MAVEN](docs/devops/maven/maven.md)
     - [K8S](docs/devops/k8s/)
         + [SKELETON](docs/devops/k8s/skeleton.md)
         + [MINIKUBE](docs/devops/k8s/minikube.md)
