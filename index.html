@@ -63,6 +63,15 @@
 							return (
 									'<div class="mermaid">' + mermaid.render('mermaid-svg-' + num++, code) + "</div>"
 							);
+						};
+						if (lang === "text"){
+							return `
+								<pre v-pre data-lang="shell">
+									<code class="lang-shell">
+										${code}
+									</code>
+								</pre>
+							`
 						}
 						return this.origin.code.apply(this, arguments);
 					}
@@ -106,9 +115,10 @@
 		<script src="dist/docsify/lib/plugins/search.min.js"></script>
 		<!-- 
 			https://docsify.js.org/#/helpers?id=image,
-			comment below zoom-image.min.js, because this not working.
+			comment below zoom-image.min.js, because that`s useless.
 		-->
 		<!-- <script src="dist/docsify/lib/plugins/zoom-image.min.js"></script> -->
+		
 		<!-- https://github.com/mrpotatoes/docsify-toc not complete, so comment-->
 		<script src="dist/docsify-toc/toc.js"></script>
 
