@@ -64,15 +64,17 @@
 									'<div class="mermaid">' + mermaid.render('mermaid-svg-' + num++, code) + "</div>"
 							);
 						};
-						if (lang === "text"){
-							return `
-								<pre v-pre data-lang="shell">
-									<code class="lang-shell">
-										${code}
-									</code>
-								</pre>
-							`
-						}
+						// if (lang == "dir"){
+						// 	debugger;
+						// 	return `
+						// 		<pre v-pre data-lang="shell">
+						// 			<code class="lang-shell">
+						// 				${code}
+						// 			</code>
+						// 		</pre>
+						// 	`
+						// }
+						//style="font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;"
 						return this.origin.code.apply(this, arguments);
 					}
 				}
