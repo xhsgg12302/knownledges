@@ -101,7 +101,8 @@
 				function(hook) {
 				var footer = [
 					'<hr/>',
-					'<footer style="padding-bottom: 30px"> Copyright © 2023 Inc · wtfu.site · 12302 <br/> </footer>'
+					// copy from https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20a%20Library.html
+					'<footer style="padding-bottom: 30px; text-align: center;"> © Copyright 2000-2023 12302, Inc. and Contributors. Created using <a style="color: inherit; text-decoration: underline;" href="https://docsify.js.org/#/">docsify</a> 4.12.2 </br> </footer>',
 				].join('');
 
 				hook.afterEach(function(html) {
