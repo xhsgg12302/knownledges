@@ -5552,7 +5552,7 @@
   }
 
   function helper(className, content) {
-    return ("<p class=\"" + className + "\">" + (content.slice(5).trim()) + "</p>");
+    return ("<p class=\"" + className + "\">" + (content.slice(5 + content.indexOf('?&')).trim()) + "</p>");
   }
 
   function theme(color) {
@@ -7623,9 +7623,9 @@
 
       return (renderer.paragraph = function (text) {
       var result;
-      if (/^!&gt;/.test(text)) {
+      if (/^\s*!&gt;/.test(text)) {
         result = helper('tip', text);
-      } else if (/^\?&gt;/.test(text)) {
+      } else if (/^\s*\?&gt;/.test(text)) {
         result = helper('warn', text);
       } else {
         result = "<p>" + text + "</p>";
