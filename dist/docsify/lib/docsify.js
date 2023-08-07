@@ -5552,7 +5552,7 @@
   }
 
   function helper(className, content) {
-    return ("<p class=\"" + className + "\">" + (content.slice(5 + content.indexOf('?&')).trim()) + "</p>");
+    return ("<p class=\"" + className + "\">" + (content.slice(5 + content.indexOf('&gt')).trim()) + "</p>");
   }
 
   function theme(color) {
