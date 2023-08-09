@@ -94,6 +94,7 @@
             + [GunPG](docs/devops/os/util/GunPG.md)
             + [OPENSSL](docs/devops/os/util/openssl.md)
             + [VIM](docs/devops/os/util/vim.md)
+            + [RANGER](docs/devops/os/util/ranger.md)
         * [SHELL](docs/devops/os/)
             + [SYNTAX](docs/devops/os/shell/syntax.md)
             + [SHELL](docs/devops/os/shell/command.md)
