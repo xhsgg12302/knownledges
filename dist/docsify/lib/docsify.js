@@ -309,6 +309,10 @@
     return /(:|(\/{2}))/g.test(path);
   });
 
+  var isImageAbsolutePath = cached(function (path) {
+    return /(:|(\/{1,2}))/g.test(path);
+  });
+
   var removeParams = cached(function (path) {
     return path.split(/[?#]/)[0];
   });
@@ -5742,7 +5746,7 @@
         attrs.push(("id=\"" + (config.id) + "\""));
       }
 
-      if (!isAbsolutePath(href)) {
+      if (!isImageAbsolutePath(href)) {
         url = getPath(contentBase, getParentPath(router.getCurrentPath()), href);
       }
 
