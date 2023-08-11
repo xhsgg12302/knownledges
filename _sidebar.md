@@ -100,6 +100,7 @@
             + [SHELL](docs/devops/os/shell/command.md)
             + [RECORD](docs/devops/os/shell/record.md)
         * [MAC OSX](docs/devops/os/)
+            + [AUTOMATOR](docs/devops/os/mac/automator.md)
             + [LAUNCHCTL](docs/devops/os/mac/launchctl.md)
             + [AUTOSSH](docs/devops/os/mac/auto-ssh.md)
             + [BREW](docs/devops/os/mac/brew.md)
