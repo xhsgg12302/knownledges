@@ -166,6 +166,20 @@
 				color: var(--text-color-base, black);
 			}
 		</style>
+		<!-- 回到顶部功能 -->
+		<script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.goup.js"></script>
+		<script type="text/javascript">
+		  $(document).ready(function () {
+			$.goup({
+			  trigger: 100,
+			  bottomOffset: 52,
+			  locationOffset: 25,
+			  //title: 'TOP',
+			  titleAsText: true
+			});
+		  });
+		</script>
 		
 		<!-- 
 		<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
