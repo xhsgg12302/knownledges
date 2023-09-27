@@ -114,6 +114,7 @@
     - [DOCKER](docs/devops/docker/docker.md)
     - [GIT](docs/devops/git/git.md)
     - [K8S](docs/devops/k8s/)
+        + [EXAMPLE](docs/devops/k8s/example.md)
         + [SKELETON](docs/devops/k8s/skeleton.md)
         + [MINIKUBE](docs/devops/k8s/minikube.md)
         + [KUBEADM](docs/devops/k8s/kubeadm.md)
