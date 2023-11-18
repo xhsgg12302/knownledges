@@ -5566,6 +5566,7 @@
   }
 
   function helper(className, content) {
+    // update by 12302
     return ("<p class=\"" + className + "\">" + (content.slice(5 + content.indexOf('&gt')).trim()) + "</p>");
   }
 
@@ -5756,6 +5757,7 @@
         attrs.push(("id=\"" + (config.id) + "\""));
       }
 
+      // update  by 12302
       if (!isImageAbsolutePath(href)) {
         url = getPath(contentBase, getParentPath(router.getCurrentPath()), href);
       }
@@ -7637,6 +7639,7 @@
 
       return (renderer.paragraph = function (text) {
       var result;
+      // update by 12302
       if (/^\s*!&gt;/.test(text)) {
         result = helper('tip', text);
       } else if (/^\s*\?&gt;/.test(text)) {
