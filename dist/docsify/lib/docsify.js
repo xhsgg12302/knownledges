@@ -3375,7 +3375,17 @@
           if (~item.indexOf('\n ')) {
             space -= item.length;
             item = !this.options.pedantic
-              ? item.replace(new RegExp('^ {1,' + space + '}', 'gm'), '')
+              // ? item.replace(new RegExp('^ {1,' + space + '}', 'gm'), '')
+              // 20231118 add by 12302,
+              // implement skip code line.
+              ? item.replace(/```[\s\S]*?```|^(.*)$/gm, (match, group) => {
+                if (group && !group.startsWith('```')) {
+                    // Perform your replacement logic here
+                    // For example:
+                    return group.replace(new RegExp('^ {1,' + space + '}', 'gm'), '');
+                }
+                return match; // Return the entire match (skip ```...``` sections)
+              })
               : item.replace(/^ {1,4}/gm, '');
           }
 
