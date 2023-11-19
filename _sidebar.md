@@ -24,6 +24,7 @@
         + [SPRINGBOOT](docs/doc/advance/springboot/springboot.md)
         + [SPRINTCLOUD](docs/doc/advance/springcloud/springcloud.md)
         + [JNI](docs/doc/advance/jni/jni.md)
+        + [JNA](docs/doc/advance/jna/jna.md)
 
     - [MYSQL](docs/doc/advance/mysql/README.md)
         + [NOTES](docs/doc/advance/mysql/note/)
