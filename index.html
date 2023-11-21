@@ -101,19 +101,19 @@
 					'https://github.com/xhsgg12302/knownledges/blob/master/',
 				),
 				function(hook) {
-				var footer = [
-					'<hr/>',
-					// copy from https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20a%20Library.html
-					'<footer style="padding-bottom: 30px; text-align: center;"> © Copyright 2000-2023 12302, Inc. and Contributors. Created using ' + 
-						'<a style="color: inherit; text-decoration: underline;" href="https://docsify.js.org/#/">docsify  </a>' + 
-						'<a style="color: inherit; text-decoration: underline;" href="https://github.com/docsifyjs/docsify/tree/e80238d4fca46b061a97c27744c9595c60ecc05c"> 4.12.2 </a>' + 
-					'</br> </footer>',
-				].join('');
+					var footer = [
+						'<hr/>',
+						// copy from https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20a%20Library.html
+						'<footer style="padding-bottom: 30px; text-align: center;"> © Copyright 2000-2023 12302, Inc. and Contributors. Created using ' + 
+							'<a style="color: inherit; text-decoration: underline;" href="https://docsify.js.org/#/">docsify  </a>' + 
+							'<a style="color: inherit; text-decoration: underline;" href="https://github.com/docsifyjs/docsify/tree/e80238d4fca46b061a97c27744c9595c60ecc05c"> 4.12.2 </a>' + 
+						'</br> </footer>',
+					].join('');
 
-				hook.afterEach(function(html) {
-					const subscription = ``;
-					return html + footer+subscription;
-				});
+					hook.afterEach(function(html) {
+						const subscription = ``;
+						return html + footer+subscription;
+					});
 				}
 			]
 		}
