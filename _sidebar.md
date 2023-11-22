@@ -128,6 +128,7 @@
 * ALGORITHM
     - [SORT](docs/algo/sort/)
         + [BUBBLE](docs/algo/sort/bubble-sort.md)
+        + [SELECTION](docs/algo/sort/selection-sort.md)
     - [TREE](docs/algo/tree.md)
     - [LINKED](docs/algo/linked.md)
     - [ARRAY](docs/algo/array.md)
