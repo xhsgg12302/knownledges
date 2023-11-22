@@ -1,5 +1,4 @@
 * DOC
-
     - [BASE](docs/doc/base/)
         + [OBJECT ORIENTED](docs/doc/base/OO.md)
         + [IO STREAM](docs/doc/base/IO.md)
@@ -31,6 +30,7 @@
 
     - [MYSQL](docs/doc/advance/mysql/README.md)
         + [NOTES](docs/doc/advance/mysql/note/)
+            +  [LEARNING_DOC](docs/doc/advance/mysql/mysql.md)
             +  [LESSON-ONE](docs/doc/advance/mysql/note/01_recognize.md)
             +  [LESSON-TWO](docs/doc/advance/mysql/note/02_cmd-and-system-variables.md)
             +  [LESSON-THREE](docs/doc/advance/mysql/note/01_recognize.md)
@@ -40,7 +40,6 @@
             +  [LESSON-SEVEN](docs/doc/advance/mysql/note/01_recognize.md)
             +  [LESSON-EIGHT](docs/doc/advance/mysql/note/01_recognize.md)
         + [INSTALL](docs/doc/advance/mysql/install.md)
-        + [LEARNING_DOC](docs/doc/advance/mysql/mysql.md)
         + [ADVANCE](docs/doc/advance/mysql/adv.md)
         + [RECORD](docs/doc/advance/mysql/record.md)
         
@@ -73,6 +72,7 @@
         + [SCHEDULE](docs/doc/advance/dstb/schedule/)
             - [QUARTZ](docs/doc/advance/dstb/schedule/quartz.md)
             - [XXL-JOB](docs/doc/advance/dstb/schedule/xxl-job.md)
+
 
 ---
 * DevOps
@@ -124,6 +124,7 @@
         + [MINIKUBE](docs/devops/k8s/minikube.md)
         + [KUBEADM](docs/devops/k8s/kubeadm.md)
 
+
 ---
 * ALGORITHM
     - [SORT](docs/algo/sort/)
@@ -134,6 +135,7 @@
     - [ARRAY](docs/algo/array.md)
     - [STACK](docs/algo/stack.md)
     - [GRAPH](docs/algo/graph.md)
+
 
 ---
 * [OTHER](docs/other/)
