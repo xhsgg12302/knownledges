@@ -79,6 +79,7 @@
     - [BUILD](docs/devops/build/)
         * [CMAKE](docs/devops/build/cmake.md)
         * [MAVEN](docs/devops/build/maven.md)
+        * [GRADLE](docs/devops/build/gradle.md)
     - [OS](docs/devops/os/)
         * [SHELL](docs/devops/os/)
             + [SYNTAX](docs/devops/os/shell/syntax.md)
