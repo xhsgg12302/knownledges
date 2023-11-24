@@ -8,21 +8,28 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 		<link rel="stylesheet" href="dist/docsify/lib/themes/vue.css">
-		<!-- <link rel="stylesheet" href="dist/mermaid/mermaid.min.css"> -->
-		<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
-		<link rel="stylesheet" href="dist/prismjs/themes/prism.css">
+		
+
+		<!-- <link rel="stylesheet" href="dist/prismjs/themes/prism.css"> -->
+		<link href="https://cdn.bootcdn.net/ajax/libs/prism/1.9.0/themes/prism.min.css" rel="stylesheet">
+
 		<link rel="stylesheet" href="dist/gitalk/dist/gitalk.css">
 		<!-- <link rel="stylesheet" href="dist/docsify-sidebar-collapse/sidebar.min.css"> -->
 		<link rel="stylesheet" href="dist/docsify-sidebar-collapse/sidebar-folder.min.css">
 		<link rel="stylesheet" href="dist/docsify-toc/toc.css">
 		<link rel="stylesheet" href="dist/docsify-gifcontrol/docsify-gifcontrol.css">
-	</head>
-	<body>
-		<div id="app"></div>
+
 		<script src="dist/docsify-edit-on-github/index.js"></script>
+
+
+		<!-- <link rel="stylesheet" href="dist/mermaid/mermaid.min.css"> -->
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
 		<!-- <script src="dist/mermaid/mermaid.min.js"></script> -->
 		<script src="https://cdn.bootcdn.net/ajax/libs/mermaid/10.4.0/mermaid.min.js"></script>
 		<!-- <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script> -->
+	</head>
+	<body>
+		<div id="app"></div>
 		<script>
 		var num = 0;
 		mermaid.initialize({ startOnLoad: false });
@@ -127,18 +134,24 @@
 		-->
 		<script src="dist/docsify/lib/plugins/zoom-image.min.js"></script>
 		
+		<!-- docsify-toc -->
 		<!-- https://github.com/mrpotatoes/docsify-toc not complete, so comment-->
 		<script src="dist/docsify-toc/toc.js"></script>
 
-		<script src="dist/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
-		<script src="dist/prismjs/components/prism-java.min.js"></script>
-		<script src="dist/prismjs/components/prism-bash.min.js"></script>
-		<script src="dist/prismjs/components/prism-docker.min.js"></script>
-		<script src="dist/prismjs/components/prism-nginx.min.js"></script>
-		<script src="dist/prismjs/components/prism-sql.js"></script>
-		<script src="dist/prismjs/components/prism-yaml.min.js"></script>
-		<script src="dist/prismjs/components/prism-c.min.js"></script>
-		<script src="dist/prismjs/components/prism-cpp.min.js"></script>
+		<!-- docsify-copy-code -->
+		<!-- <script src="dist/docsify-copy-code/dist/docsify-copy-code.min.js"></script> -->
+		<script src="https://cdn.bootcdn.net/ajax/libs/docsify-copy-code/3.0.0/docsify-copy-code.min.js"></script>
+
+		<!-- prism -->
+		<script src="https://cdn.bootcdn.net/ajax/libs/prism/1.9.0/components/prism-java.min.js"></script>
+		<script src="https://cdn.bootcdn.net/ajax/libs/prism/1.9.0/components/prism-python.min.js"></script>
+		<script src="https://cdn.bootcdn.net/ajax/libs/prism/1.9.0/components/prism-bash.min.js"></script>
+		<script src="https://cdn.bootcdn.net/ajax/libs/prism/1.9.0/components/prism-docker.min.js"></script>
+		<script src="https://cdn.bootcdn.net/ajax/libs/prism/1.9.0/components/prism-nginx.min.js"></script>
+		<script src="https://cdn.bootcdn.net/ajax/libs/prism/1.9.0/components/prism-sql.min.js"></script>
+		<script src="https://cdn.bootcdn.net/ajax/libs/prism/1.9.0/components/prism-yaml.min.js"></script>
+		<script src="https://cdn.bootcdn.net/ajax/libs/prism/1.9.0/components/prism-c.min.js"></script>
+		<script src="https://cdn.bootcdn.net/ajax/libs/prism/1.9.0/components/prism-cpp.min.js"></script>
 
 		<!-- auto collapse tree see: https://github.com/iPeng6/docsify-sidebar-collapse -->
 		<script src="dist/docsify-sidebar-collapse/docsify-sidebar-collapse.min.js"></script>
@@ -170,6 +183,8 @@
 				color: var(--text-color-base, black);
 			}
 		</style>
+
+		<!-- TOP -->
 		<!-- https://bytesfly.github.io/blog/#/LeetCode/0206-reverse-linked-list -->
 		<script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.js"></script>
 		<script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.goup.js"></script>
