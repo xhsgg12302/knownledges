@@ -31,6 +31,7 @@
     - [MYSQL](docs/doc/advance/mysql/README.md)
         + [BOOK](docs/doc/advance/mysql/book/)
             -  [ommit](docs/doc/advance/mysql/book/README.md)
+            -  [CHARACTER/COLLATION](docs/doc/advance/mysql/book/03_character_and_collation.md)
         + [LESSON](docs/doc/advance/mysql/lesson/)
             -  [LEARNING_DOC](docs/doc/advance/mysql/mysql.md)
             -  [LESSON-ONE](docs/doc/advance/mysql/lesson/01_recognize.md)
