@@ -30,8 +30,9 @@
 
     - [MYSQL](docs/doc/advance/mysql/README.md)
         + [BOOK](docs/doc/advance/mysql/book/)
-            -  [ommit](docs/doc/advance/mysql/book/README.md)
-            -  [CHARACTER/COLLATION](docs/doc/advance/mysql/book/03_character_and_collation.md)
+            -  [01-RECONGIZE](docs/doc/advance/mysql/book/01_recognize.md)
+            -  [02-CMD_AND_SYSTEM_VARIABLES](docs/doc/advance/mysql/book/02_cmd-and-system-variables.md)
+            -  [03-CHARACTER_AND_COLLATION](docs/doc/advance/mysql/book/03_character_and_collation.md)
         + [LESSON](docs/doc/advance/mysql/lesson/)
             -  [LEARNING_DOC](docs/doc/advance/mysql/mysql.md)
             -  [LESSON-ONE](docs/doc/advance/mysql/lesson/01_recognize.md)
