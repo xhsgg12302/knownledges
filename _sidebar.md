@@ -46,6 +46,7 @@
         + [INSTALL](docs/doc/advance/mysql/install.md)
         + [ADVANCE](docs/doc/advance/mysql/adv.md)
         + [RECORD](docs/doc/advance/mysql/record.md)
+        + [SPEC](docs/doc/advance/mysql/spec.html)
         
     - [MQ](docs/doc/advance/mq/)
         + [ACTIVEMQ](docs/doc/advance/mq/activemq/)
@@ -102,6 +103,7 @@
             + [HASHCAT](docs/devops/os/util/hashcat.md)
             + [GunPG](docs/devops/os/util/GunPG.md)
             + [OPENSSL](docs/devops/os/util/openssl.md)
+            + [OSSUTILS](docs/devops/os/util/ossutils.md)
             + [VIM](docs/devops/os/util/vim.md)
             + [RANGER](docs/devops/os/util/ranger.md)
         * [SOFTWARE](docs/devops/os/softwares/)
