@@ -310,7 +310,8 @@
   });
 
   var isImageAbsolutePath = cached(function (path) {
-    return /(:|(\/{1,2}))/g.test(path);
+    //return /(:|(\/{1,2}))/g.test(path);
+    return /^(:|(\/{1,2}))/g.test(path);
   });
 
   var removeParams = cached(function (path) {
