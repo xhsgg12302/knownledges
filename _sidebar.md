@@ -77,6 +77,8 @@
         * [CMAKE](docs/devops/build/cmake.md)
         * [MAVEN](docs/devops/build/maven.md)
         * [GRADLE](docs/devops/build/gradle.md)
+    - [NETWORK](docs/devops/network/)
+        * [TCP](docs/devops/network/tcp.md)
     - [OS](docs/devops/os/)
         * [SHELL](docs/devops/os/)
             + [SYNTAX](docs/devops/os/shell/syntax.md)
