@@ -75,6 +75,8 @@
 ---
 * DevOps
     - [BUILD](docs/devops/build/)
+        * [GCC](docs/devops/build/gcc/)
+            + [LIBRARY](docs/devops/build/gcc/library.md)
         * [CMAKE](docs/devops/build/cmake.md)
         * [MAVEN](docs/devops/build/maven.md)
         * [GRADLE](docs/devops/build/gradle.md)
