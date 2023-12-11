@@ -7640,10 +7640,11 @@
       );
 
       // lineNumbers append by 12302
+      var windowsStyle = '<div class="outer yosemite"><div class="dot red"></div><div class="dot amber"></div><div class="dot green"></div></div>'
       var htmlString = ("<pre v-pre data-lang=\"" + lang + "\"><code class=\"line-numbers lang-" + lang + "\">" + text + "</code></pre>");
       var element = htmlToElement(htmlString);
       prism.highlightElement(element.querySelector('code'),false)
-      return element.outerHTML;
+      return windowsStyle + element.outerHTML;
     });
   };
 

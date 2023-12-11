@@ -166,7 +166,7 @@
 		<script src="dist/docsify-tabs/docsify-tabs-js.js"></script>
 		<style type="text/css">
 			pre {
-				border-radius: 8px;
+				/* border-radius: 8px; */
 				background-color: #f3f2ee !important;
 			}
 			.markdown-section {
@@ -189,6 +189,16 @@
 			.line-numbers .line-numbers-rows {
 				line-height: inherit;
 			}
+			.token.operator{
+				background: none;
+			}
+
+			pre[class*=language-] {
+				margin: 0em 0;
+			}
+
+
+			
 			:root {
 				--docsifytabs-border-color: #e0b6b6;
 				--docsifytabs-tab-highlight-color: rgb(4, 0, 128);
@@ -208,8 +218,8 @@
 			.outer {
 				background: #b4b4b4;
 				opacity: 0.9;
-				width: 960px;
-				margin: 10px auto;
+				/* width: 960px; */
+				/* margin: 10px auto; */
 				padding: 7px;
 				border-radius: 7px 7px 0px 0px;
 				
@@ -232,6 +242,8 @@
 					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#dadada',GradientType=0 ); /* IE6-9 */
 					border: 1px solid #d8d8d8;
 					border-bottom: 1px solid #b4b4b4;
+					height: 35px;
+					line-height: 1.4rem;
 				}
 			}
 
