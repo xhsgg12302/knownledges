@@ -7619,6 +7619,13 @@
 
   }(Prism));
 
+
+  function htmlToElement(html) {
+    var template = document.createElement('template');
+    template.innerHTML = html.trim();
+    return template.content.firstChild;
+  }
+
   var highlightCodeCompiler = function (ref) {
       var renderer = ref.renderer;
 
@@ -7632,7 +7639,11 @@
         lang
       );
 
-      return ("<pre v-pre data-lang=\"" + lang + "\"><code class=\"lang-" + lang + "\">" + text + "</code></pre>");
+      // lineNumbers append by 12302
+      var htmlString = ("<pre v-pre data-lang=\"" + lang + "\"><code class=\"line-numbers lang-" + lang + "\">" + text + "</code></pre>");
+      var element = htmlToElement(htmlString);
+      prism.highlightElement(element.querySelector('code'),false)
+      return element.outerHTML;
     });
   };
 

@@ -14,6 +14,7 @@
 
 		<!-- <link rel="stylesheet" href="dist/prismjs/themes/prism.css"> -->
 		<link href="https://cdn.bootcdn.net/ajax/libs/prism/1.23.0/themes/prism.min.css" rel="stylesheet">
+		<link href="https://cdn.bootcdn.net/ajax/libs/prism/1.23.0/plugins/line-numbers/prism-line-numbers.min.css" rel="stylesheet">
 
 		<link rel="stylesheet" href="dist/gitalk/dist/gitalk.css">
 		<!-- <link rel="stylesheet" href="dist/docsify-sidebar-collapse/sidebar.min.css"> -->
@@ -155,6 +156,9 @@
 		<script src="https://cdn.bootcdn.net/ajax/libs/prism/1.23.0/components/prism-c.min.js"></script>
 		<script src="https://cdn.bootcdn.net/ajax/libs/prism/1.23.0/components/prism-cpp.min.js"></script>
 
+		<!-- prism plugins-->
+		<script src="https://cdn.bootcdn.net/ajax/libs/prism/1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+
 		<!-- auto collapse tree see: https://github.com/iPeng6/docsify-sidebar-collapse -->
 		<script src="dist/docsify-sidebar-collapse/docsify-sidebar-collapse.min.js"></script>
 
@@ -171,6 +175,19 @@
 			.markdown-section pre {
 				padding-right: 0px !important;
 				box-shadow: 2px 1px 20px 2px #aaa;
+				/* background-color: #f8f8f8; */
+			}
+			.markdown-section pre>code {
+				overflow: visible;
+				padding: 0px;
+			}
+
+			.markdown-section code{
+				padding: auto;
+				/* background-color: #f8f8f8; */
+			}
+			.line-numbers .line-numbers-rows {
+				line-height: inherit;
 			}
 			:root {
 				--docsifytabs-border-color: #e0b6b6;
