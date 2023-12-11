@@ -7633,15 +7633,15 @@
       if ( lang === void 0 ) lang = 'markup';
 
       var langOrMarkup = prism.languages[lang] || prism.languages.markup;
-      var text = prism.highlight(
-        code.replace(/@DOCSIFY_QM@/g, '`'),
-        langOrMarkup,
-        lang
-      );
+      // var text = prism.highlight(
+      //   code.replace(/@DOCSIFY_QM@/g, '`'),
+      //   langOrMarkup,
+      //   lang
+      // );
 
       // lineNumbers append by 12302
       var windowsStyle = '<div class="outer yosemite"><div class="dot red"></div><div class="dot amber"></div><div class="dot green"></div></div>'
-      var htmlString = ("<pre v-pre data-lang=\"" + lang + "\"><code class=\"line-numbers lang-" + lang + "\">" + text + "</code></pre>");
+      var htmlString = ("<pre v-pre data-lang=\"" + lang + "\"><code class=\"line-numbers lang-" + lang + "\">" + code + "</code></pre>");
       var element = htmlToElement(htmlString);
       prism.highlightElement(element.querySelector('code'),false)
       return windowsStyle + element.outerHTML;
