@@ -6291,7 +6291,7 @@
   	 * @memberof Prism
   	 * @public
   	 */
-  	highlightElement: function(element, async, callback) {
+  	highlightElement: function(element, async, callback, cus_code) {
   		// Find language
   		var language = _.util.getLanguage(element);
   		var grammar = _.languages[language];
@@ -6305,7 +6305,12 @@
   			parent.className = parent.className.replace(lang, '').replace(/\s+/g, ' ') + ' language-' + language;
   		}
 
-  		var code = element.textContent;
+  		//var code = element.textContent;
+      // update by 12302, escape xml
+      var code = element.textContent;
+      if(cus_code != undefined && cus_code !== ''){
+        code = cus_code;
+      }
 
   		var env = {
   			element: element,
@@ -7632,7 +7637,7 @@
       return (renderer.code = function(code, lang) {
       if ( lang === void 0 ) lang = 'markup';
 
-      var langOrMarkup = prism.languages[lang] || prism.languages.markup;
+      // var langOrMarkup = prism.languages[lang] || prism.languages.markup;
       // var text = prism.highlight(
       //   code.replace(/@DOCSIFY_QM@/g, '`'),
       //   langOrMarkup,
@@ -7640,10 +7645,11 @@
       // );
 
       // lineNumbers append by 12302
+      // and use the highlight() in highlightElement() that comes with official prismjs
       var windowsStyle = '<div class="outer yosemite"><div class="dot red"></div><div class="dot amber"></div><div class="dot green"></div></div>'
-      var htmlString = ("<pre v-pre data-lang=\"" + lang + "\"><code class=\"line-numbers lang-" + lang + "\">" + code + "</code></pre>");
+      var htmlString = ("<pre v-pre data-lang=\"" + lang + "\"><code class=\"line-numbers lang-" + lang + "\">" + '' + "</code></pre>");
       var element = htmlToElement(htmlString);
-      prism.highlightElement(element.querySelector('code'),false)
+      prism.highlightElement(element.querySelector('code'), false, null, code.replace(/@DOCSIFY_QM@/g, '`'))
       return windowsStyle + element.outerHTML;
     });
   };
