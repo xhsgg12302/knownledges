@@ -82,6 +82,7 @@
         * [MAVEN](docs/devops/build/maven.md)
         * [GRADLE](docs/devops/build/gradle.md)
     - [NETWORK](docs/devops/network/)
+        * [STACK](docs/devops/network/network-stack.md)
         * [TCP](docs/devops/network/tcp.md)
         * [DOCKER0](docs/devops/network/docker0.md)
         * [TUN/TAP](docs/devops/network/tun-tap.md)
