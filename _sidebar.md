@@ -38,6 +38,7 @@
         + [LESSON](docs/doc/advance/mysql/lesson/)
             -  [01-DATABASE_RELATED_CONCEPTS](docs/doc/advance/mysql/lesson/01_database_related_concepts.md)
             -  [02-FUNCTION](docs/doc/advance/mysql/lesson/02_function.md)
+            -  [03-DQL](docs/doc/advance/mysql/lesson/03_dql.md)
             -  [LEARNING_DOC](docs/doc/advance/mysql/mysql.md)
         + [INSTALL](docs/doc/advance/mysql/install.md)
         + [ADVANCE](docs/doc/advance/mysql/adv.md)
