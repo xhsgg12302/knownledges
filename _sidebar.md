@@ -8,6 +8,7 @@
         + [EXCEPTION](docs/doc/base/exception.md)
         + [ADVANCE](docs/doc/base/advance.md)
         + [AQS](docs/doc/base/AQS.md)
+        + [JAVAAGENT](docs/doc/base/javaagent.md)
 
 	- [ADVANCE](docs/doc/advance/)	
         + [JDK](docs/doc/advance/jdk/)
