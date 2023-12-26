@@ -8,10 +8,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
-
 		<link rel="stylesheet" href="dist/docsify/lib/themes/vue.css">
 		
-
 		<!-- <link rel="stylesheet" href="dist/prismjs/themes/prism.css"> -->
 		<link href="https://cdn.bootcdn.net/ajax/libs/prism/1.23.0/themes/prism.min.css" rel="stylesheet">
 		<link href="https://cdn.bootcdn.net/ajax/libs/prism/1.23.0/plugins/line-numbers/prism-line-numbers.min.css" rel="stylesheet">
@@ -24,9 +22,10 @@
 
 		<script src="dist/docsify-edit-on-github/index.js"></script>
 
-
 		<!-- <link rel="stylesheet" href="dist/mermaid/mermaid.min.css"> -->
 		<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
+
+		<link rel="stylesheet" href="dist/index.css">
 		<!-- <script src="dist/mermaid/mermaid.min.js"></script> -->
 		<script src="https://cdn.bootcdn.net/ajax/libs/mermaid/10.4.0/mermaid.min.js"></script>
 		<!-- <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script> -->
@@ -111,13 +110,13 @@
 				EditOnGithubPlugin.create(
 					'https://github.com/xhsgg12302/knownledges/blob/master/',
 				),
-				function(hook) {
+				function(hook, vm) {
 					var footer = [
 						'<hr/>',
 						// copy from https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20a%20Library.html
 						'<footer style="padding-bottom: 30px; text-align: center;"> © Copyright 2000-2023 12302, Inc. and Contributors. Created using ' + 
 							'<a style="color: inherit; text-decoration: underline;" href="https://docsify.js.org/#/">docsify  </a>' + 
-							'<a style="color: inherit; text-decoration: underline;" href="https://github.com/docsifyjs/docsify/tree/e80238d4fca46b061a97c27744c9595c60ecc05c"> 4.12.2 </a>' + 
+							'<a style="color: inherit; text-decoration: underline;" href="https://github.com/docsifyjs/docsify/tree/e80238d4fca46b061a97c27744c9595c60ecc05c"> ' + window.Docsify.version + ' </a>' + 
 						'</br> </footer>',
 					].join('');
 
@@ -125,6 +124,24 @@
 						const subscription = ``;
 						return html + footer+subscription;
 					});
+
+					// 貌似代码过长会导致对齐差距越明显，暂时停用
+					// 不是使用原来的prism 的line number插件。
+					// 参考：https://github.com/dromara/Sa-Token/blob/562c369cf22190ba65166cd1686eed23895a785b/sa-token-doc/static/docsify-plugin.js#L40C8-L40C8
+					// hook.doneEach(function() {
+					// 	// 功能3，给代码盒子，添加行数样式
+					// 	$('pre code').each(function(){
+					// 		var lines = $(this).text().split('\n').length;
+					// 		var $numbering = $('<ul/>').addClass('code-line-box');
+					// 		$(this)
+					// 			.addClass('has-numbering')
+					// 			.parent()
+					// 			.append($numbering);
+					// 		for(i=1;i<=lines;i++){
+					// 			$numbering.append($('<li/>').text(i));
+					// 		}
+					// 	});
+					// });
 				}
 			]
 		}
@@ -164,129 +181,24 @@
 
 		<!-- docsify-tabs see: https://jhildenbiddle.github.io/docsify-tabs/#/ -->
 		<script src="dist/docsify-tabs/docsify-tabs-js.js"></script>
-		<style type="text/css">
-			pre {
-				/* border-radius: 8px; */
-				background-color: #f3f2ee !important;
-			}
-			.markdown-section {
-				max-width: 80%;
-			}
-			.markdown-section pre {
-				padding-right: 0px !important;
-				box-shadow: 2px 1px 20px 2px #aaa;
-				/* background-color: #f8f8f8; */
-			}
-			.markdown-section pre>code {
-				overflow: visible;
-				padding: 0px;
-			}
 
-			.markdown-section code{
-				padding: auto;
-				/* background-color: #f8f8f8; */
-			}
-			.line-numbers .line-numbers-rows {
-				line-height: inherit;
-			}
-			.token.operator{
-				background: none;
-			}
-
-			pre[class*=language-] {
-				margin: 0em 0;
-			}
-
-
-			
-			:root {
-				--docsifytabs-border-color: #e0b6b6;
-				--docsifytabs-tab-highlight-color: rgb(4, 0, 128);
-			}
-
-			aside a {
-				display: inline-block; /* 将a标签设为块级元素 */
-				white-space: nowrap; /* 不允许文本换行 */
-				overflow: hidden; /* 隐藏超出部分的文本 */
-				text-overflow: ellipsis; /* 超出部分用省略号代替 */
-				color: var(--text-color-base, black);
-			}
-		</style>
-
-        <!-- https://codepen.io/swillis/pen/RwzpbP -->
-		<style>
-			.outer {
-				background: #b4b4b4;
-				opacity: 0.9;
-				/* width: 960px; */
-				/* margin: 10px auto; */
-				padding: 7px;
-				border-radius: 7px 7px 0px 0px;
-				
-				&.dark {
-					background: #273138;
-					
-					.dot {
-					background: #4a5c66;
-					}
-				}
-
-				&.yosemite {
-					background: #f6f6f6; /* Old browsers */
-					background: -moz-linear-gradient(top,  #f6f6f6 0%, #dadada 100%); /* FF3.6+ */
-					background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f6f6), color-stop(100%,#dadada)); /* Chrome,Safari4+ */
-					background: -webkit-linear-gradient(top,  #f6f6f6 0%,#dadada 100%); /* Chrome10+,Safari5.1+ */
-					background: -o-linear-gradient(top,  #f6f6f6 0%,#dadada 100%); /* Opera 11.10+ */
-					background: -ms-linear-gradient(top,  #f6f6f6 0%,#dadada 100%); /* IE10+ */
-					background: linear-gradient(to bottom,  #f6f6f6 0%,#dadada 100%); /* W3C */
-					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#dadada',GradientType=0 ); /* IE6-9 */
-					border: 1px solid #d8d8d8;
-					border-bottom: 1px solid #b4b4b4;
-					height: 35px;
-					line-height: 1.4rem;
-					margin-top: 20px;
-				}
-			}
-
-			.dot {
-				display: inline-block;
-				width: 10px;
-				height: 10px;
-				background: #f9f9f9;
-				border-radius: 50%;
-				margin: 0 4px 0 0;
-				
-				&.red {
-					background: #FF6057;
-					border: 1px solid #E14640;
-				}
-
-				&.amber {
-					background: #FFBD2E;
-					border: 1px solid #DFA123;
-				}
-
-				&.green {
-					background: #27C93F;
-					border: 1px solid #1DAD2B;
-				}
-			}
-		</style>
+		<!-- gifcontrol : https://github.com/gbodigital/docsify-gifcontrol  -->
+		<script src="dist/docsify-gifcontrol/docsify-gifcontrol.js"></script>
 
 		<!-- TOP -->
 		<!-- https://bytesfly.github.io/blog/#/LeetCode/0206-reverse-linked-list -->
 		<script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.js"></script>
 		<script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.goup.js"></script>
 		<script type="text/javascript">
-		  $(document).ready(function () {
-			$.goup({
-			  trigger: 100,
-			  bottomOffset: 52,
-			  locationOffset: 25,
-			  //title: 'TOP',
-			  titleAsText: true
-			});
-		  });
+		  	$(document).ready(function () {
+				$.goup({
+					trigger: 100,
+					bottomOffset: 52,
+					locationOffset: 25,
+					//title: 'TOP',
+					titleAsText: true
+				});
+		  	});
 		</script>
 		
 		<!-- 
@@ -304,8 +216,5 @@
 		})
 		</script>
 		-->
-
-		<!-- gifcontrol : https://github.com/gbodigital/docsify-gifcontrol  -->
-		<script src="dist/docsify-gifcontrol/docsify-gifcontrol.js"></script>
 	</body>
 </html>

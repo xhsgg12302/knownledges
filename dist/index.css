@@ -1,0 +1,114 @@
+pre {
+    /* border-radius: 8px; */
+    background-color: #f3f2ee !important;
+}
+.markdown-section {
+    max-width: 80%;
+}
+.markdown-section pre {
+    padding-right: 0px !important;
+    box-shadow: 2px 1px 20px 2px #aaa;
+    /* background-color: #f8f8f8; */
+}
+.markdown-section pre>code {
+    /* 固定复制按钮位置 */
+    /* overflow: visible; */
+    padding: 0px;
+    /* padding-left: 3em; */
+}
+
+.markdown-section code{
+    padding: auto;
+    /* background-color: #f8f8f8; */
+}
+.line-numbers .line-numbers-rows {
+    line-height: inherit;
+}
+.token.operator{
+    background: none;
+}
+
+pre[class*=language-] {
+    margin: 0em 0;
+}
+
+:root {
+    --docsifytabs-border-color: #e0b6b6;
+    --docsifytabs-tab-highlight-color: rgb(4, 0, 128);
+}
+
+aside a {
+    display: inline-block; /* 将a标签设为块级元素 */
+    white-space: nowrap; /* 不允许文本换行 */
+    overflow: hidden; /* 隐藏超出部分的文本 */
+    text-overflow: ellipsis; /* 超出部分用省略号代替 */
+    color: var(--text-color-base, black);
+}
+
+/* https://github.com/dromara/Sa-Token/blob/562c369cf22190ba65166cd1686eed23895a785b/sa-token-doc/static/doc.css#L104 */
+/* 代码行号盒子样式 */
+.code-line-box {list-style-type: none; border-right: 1px solid #000; position: absolute; top: 0; left: 0; width: 40px;  user-select: none;}
+.code-line-box {padding: calc(1em + 4px)  0px !important; padding-bottom: calc(1.5em + 20px) !important; margin: 0px !important;}
+.code-line-box {line-height: inherit !important; background-color: #e6e1e1; color: #aaa;font-weight: 400;font-size: 0.85em;text-align: center;}
+
+
+/* 
+    macosx window style
+    https://codepen.io/swillis/pen/RwzpbP 
+*/
+.outer {
+    background: #b4b4b4;
+    opacity: 0.9;
+    /* width: 960px; */
+    /* margin: 10px auto; */
+    padding: 7px;
+    border-radius: 7px 7px 0px 0px;
+    
+    &.dark {
+        background: #273138;
+        
+        .dot {
+        background: #4a5c66;
+        }
+    }
+
+    &.yosemite {
+        background: #f6f6f6; /* Old browsers */
+        background: -moz-linear-gradient(top,  #f6f6f6 0%, #dadada 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f6f6), color-stop(100%,#dadada)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #f6f6f6 0%,#dadada 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  #f6f6f6 0%,#dadada 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  #f6f6f6 0%,#dadada 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  #f6f6f6 0%,#dadada 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#dadada',GradientType=0 ); /* IE6-9 */
+        border: 1px solid #d8d8d8;
+        border-bottom: 1px solid #b4b4b4;
+        height: 35px;
+        line-height: 1.4rem;
+        margin-top: 20px;
+    }
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #f9f9f9;
+    border-radius: 50%;
+    margin: 0 4px 0 0;
+    
+    &.red {
+        background: #FF6057;
+        border: 1px solid #E14640;
+    }
+
+    &.amber {
+        background: #FFBD2E;
+        border: 1px solid #DFA123;
+    }
+
+    &.green {
+        background: #27C93F;
+        border: 1px solid #1DAD2B;
+    }
+}
