@@ -12,7 +12,7 @@ pre {
 }
 .markdown-section pre>code {
     /* 固定复制按钮位置 */
-    /* overflow: visible; */
+    overflow: visible;
     padding: 0px;
     /* padding-left: 3em; */
 }
