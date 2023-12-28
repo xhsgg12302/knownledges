@@ -156,7 +156,7 @@ function plugin(hook, vm) {
       return;
     }
 
-    // 12302 quit with <title> 404...
+    // add by 12302 quit with <title> 404...
     var result = document.evaluate('//*[@id="main"]/title', document).iterateNext();
     if (result) {
       var tocChild = document.querySelectorAll('.nav .page_toc'); // 或者 'block,inline'，具体根据需要设置
