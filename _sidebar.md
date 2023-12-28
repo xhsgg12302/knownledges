@@ -30,6 +30,8 @@
             - [JNI](docs/doc/advance/native/jni.md)
             - [JNA](docs/doc/advance/native/jna.md)
             - [JAVACPP](docs/doc/advance/native/javacpp.md)
+        + [LOG FRAMEWORK](docs/doc/advance/log-framework/)
+            - [JUL](docs/doc/advance/log-framework/jul.md)
 
     - [MYSQL](docs/doc/advance/mysql/README.md)
         + [BOOK](docs/doc/advance/mysql/book/)
@@ -156,6 +158,6 @@
     - [REVIEW](docs/other/hr/review-preparement.md)
     - [HR_PROBLEM](docs/other/hr/hr.md)
     - [CTO_PROBLEM](docs/other/hr/cto.md)
-    - [TEMP](docs/temp/render/)
-        + [RENDER](docs/temp/render/md/render.md)
+    - [TEMP](docs/template/temp/render/)
+        + [RENDER](docs/template/temp/render/md/render.md)
 
