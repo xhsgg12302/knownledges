@@ -79,7 +79,7 @@
             - [XXL-JOB](docs/doc/advance/dstb/schedule/xxl-job.md)
 
 
----
+----------------------------------------------------------------------------------------------------
 * DevOps
     - [BUILD](docs/devops/build/)
         * [GCC](docs/devops/build/gcc/)
@@ -139,7 +139,7 @@
         + [KUBEADM](docs/devops/k8s/kubeadm.md)
 
 
----
+----------------------------------------------------------------------------------------------------
 * ALGORITHM
     - [SORT](docs/algo/sort/)
         + [BUBBLE](docs/algo/sort/bubble-sort.md)
@@ -152,7 +152,7 @@
     - [GRAPH](docs/algo/graph.md)
 
 
----
+----------------------------------------------------------------------------------------------------
 * [OTHER](docs/other/)
     - [DOCSIFY_DOC](https://docsify.js.org/#/zh-cn/)
     - [REVIEW](docs/other/hr/review-preparement.md)
