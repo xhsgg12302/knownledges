@@ -156,6 +156,16 @@ function plugin(hook, vm) {
       return;
     }
 
+    // 12302 quit with <title> 404...
+    var result = document.evaluate('//*[@id="main"]/title', document).iterateNext();
+    if (result) {
+      var tocChild = document.querySelectorAll('.nav .page_toc'); // 或者 'block,inline'，具体根据需要设置
+      if (tocChild && tocChild.length > 0){ 
+        tocChild[0].style.display = 'none';
+      }
+      return;
+    }
+
   	const toc = buildTOC(userOptions);
 
     // Just unset it for now.
