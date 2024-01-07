@@ -8793,6 +8793,8 @@
 
         this._updateRender();
         toggleClass(body, 'ready');
+        // add close class to body by 12302
+        toggleClass(body, 'add','close');
       };
 
       return Render;
