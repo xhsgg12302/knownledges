@@ -107,6 +107,11 @@
 				tabHeadings: true       // default
 			},
 
+			timeUpdater: {
+				text: "<div align='right' width='200px' style='color:gray;font-size:16px'>Update @ {docsify-updated}</div>",
+				formatUpdated: "{YYYY}/{MM}/{DD} {HH}:{mm}:{ss}",
+			},
+
 			plugins: [
 				// remove edit on github plugin
 				// EditOnGithubPlugin.create(
@@ -124,7 +129,7 @@
 
 					hook.afterEach(function(html) {
 						const subscription = ``;
-						return html + footer+subscription;
+						return html + footer + subscription;
 					});
 
 					// 貌似代码过长会导致对齐差距越明显，暂时停用
@@ -184,6 +189,12 @@
 
 		<!-- docsify-tabs see: https://jhildenbiddle.github.io/docsify-tabs/#/ -->
 		<script src="dist/docsify-tabs/docsify-tabs-js.js"></script>
+
+		<!-- 
+			1. https://github.com/pfeak/docsify-updated
+			2. (other one)https://github.com/ArchLinuxStudio/ShellTutorial/blob/master/docs/index.html
+		-->
+		<script src="https://cdn.jsdelivr.net/npm/docsify-updated/src/time-updater.min.js"></script>
 
 		<!-- gifcontrol : https://github.com/gbodigital/docsify-gifcontrol  -->
 		<script src="dist/docsify-gifcontrol/docsify-gifcontrol.js"></script>
