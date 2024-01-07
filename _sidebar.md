@@ -142,6 +142,8 @@
 
 ----------------------------------------------------------------------------------------------------
 * ALGORITHM
+    - [SEARCH](docs/algo/search/)
+        + [BINARY](docs/algo/search/binary-search.md)
     - [SORT](docs/algo/sort/)
         + [BUBBLE](docs/algo/sort/bubble-sort.md)
         + [SELECTION](docs/algo/sort/selection-sort.md)
