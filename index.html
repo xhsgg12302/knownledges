@@ -180,7 +180,6 @@
 		<script src="https://cdn.bootcdn.net/ajax/libs/prism/1.23.0/components/prism-c.min.js"></script>
 		<script src="https://cdn.bootcdn.net/ajax/libs/prism/1.23.0/components/prism-cpp.min.js"></script>
 		<script src="https://cdn.bootcdn.net/ajax/libs/prism/1.23.0/components/prism-properties.min.js"></script>
-
 		<!-- prism plugins-->
 		<script src="https://cdn.bootcdn.net/ajax/libs/prism/1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
 
@@ -194,15 +193,18 @@
 			1. https://github.com/pfeak/docsify-updated
 			2. (other one)https://github.com/ArchLinuxStudio/ShellTutorial/blob/master/docs/index.html
 			3. https://github.com/docsifyjs/docsify/issues/1321
+
+			* 	第一种方式会在部署后会全局修改，会出现错误。
+				第二种暂时先不处理了。
 		-->
-		<script src="https://cdn.jsdelivr.net/npm/docsify-updated/src/time-updater.min.js"></script>
+		<!-- <script src="https://cdn.jsdelivr.net/npm/docsify-updated/src/time-updater.min.js"></script> -->
 
 		<!-- gifcontrol : https://github.com/gbodigital/docsify-gifcontrol  -->
 		<script src="dist/docsify-gifcontrol/docsify-gifcontrol.js"></script>
 
 		<!-- TOP -->
 		<!-- https://bytesfly.github.io/blog/#/LeetCode/0206-reverse-linked-list -->
-		<script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.js"></script>
+		<!-- <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.js"></script>
 		<script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.goup.js"></script>
 		<script type="text/javascript">
 		  	$(document).ready(function () {
@@ -214,7 +216,13 @@
 					titleAsText: true
 				});
 		  	});
-		</script>
+		</script> 
+		
+		https://github.com/vfeskov/vanilla-back-to-top/blob/v7.2.1/OPTIONS.md
+		-->
+		<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+		<script>addBackToTop({diameter: 56, backgroundColor: 'rgb(255, 82, 82)', textColor: '#fff'})</script>
+		<!-- <script>addBackToTop({diameter: 56, backgroundColor: 'rgb(66, 185, 131)', textColor: '#fff'})</script> -->
 		
 		<!-- 
 		<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
