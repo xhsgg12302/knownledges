@@ -39,6 +39,8 @@
             -  [01-RECONGIZE](docs/doc/advance/mysql/book/01_recognize.md)
             -  [02-CMD_AND_SYSTEM_VARIABLES](docs/doc/advance/mysql/book/02_cmd-and-system-variables.md)
             -  [03-CHARACTER_AND_COLLATION](docs/doc/advance/mysql/book/03_character_and_collation.md)
+            -  [04-INNODB_RECORD_STRUCT](docs/doc/advance/mysql/book/04_innodb-record-struct.md)
+            -  [05-INNODB_PAGE_STRUCT](docs/doc/advance/mysql/book/05_innodb-page-struct.md)
         + [LESSON](docs/doc/advance/mysql/lesson/)
             -  [01-DATABASE_RELATED_CONCEPTS](docs/doc/advance/mysql/lesson/01_database_related_concepts.md)
             -  [02-FUNCTION](docs/doc/advance/mysql/lesson/02_function.md)
