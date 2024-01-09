@@ -50,7 +50,8 @@
         + [INSTALL](docs/doc/advance/mysql/install.md)
         + [ADVANCE](docs/doc/advance/mysql/adv.md)
         + [RECORD](docs/doc/advance/mysql/record.md)
-        + [SPEC](docs/doc/advance/mysql/spec.html)
+        <!-- + [SPEC](docs/doc/advance/mysql/spec.html) -->
+        + [SPECIFICATION](docs/doc/advance/mysql/specification.md)
         
     - [MQ](docs/doc/advance/mq/)
         + [ACTIVEMQ](docs/doc/advance/mq/activemq/)
