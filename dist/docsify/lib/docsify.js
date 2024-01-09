@@ -3872,6 +3872,8 @@
     .getRegex();
 
   block.bullet = /(?:[*+-]|\d{1,9}[.)])/;
+  // update by 12302 , 修改bullet 换行终止问题。暂时未测通。记录一下
+  // block.item = /^( *)(bull) ?[^\n]*(?:\n(?!( *bull ?)|^\s*$)[^\n]*)*/;
   block.item = /^( *)(bull) ?[^\n]*(?:\n(?! *bull ?)[^\n]*)*/;
   block.item = edit$1(block.item, 'gm')
     .replace(/bull/g, block.bullet)
