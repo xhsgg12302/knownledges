@@ -41,6 +41,7 @@
             -  [03-CHARACTER_AND_COLLATION](docs/doc/advance/mysql/book/03_character_and_collation.md)
             -  [04-INNODB_RECORD_STRUCT](docs/doc/advance/mysql/book/04_innodb-record-struct.md)
             -  [05-INNODB_PAGE_STRUCT](docs/doc/advance/mysql/book/05_innodb-page-struct.md)
+            -  [06-B+TREE_INDEX](docs/doc/advance/mysql/book/06_B+tree_index.md)
         + [LESSON](docs/doc/advance/mysql/lesson/)
             -  [01-DATABASE_RELATED_CONCEPTS](docs/doc/advance/mysql/lesson/01_database_related_concepts.md)
             -  [02-FUNCTION](docs/doc/advance/mysql/lesson/02_function.md)
