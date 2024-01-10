@@ -26,9 +26,15 @@
 		<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
 
 		<link rel="stylesheet" href="dist/index.css">
+
+		<!-- 
+			mermaid return [object Promise]
+			https://stackoverflow.com/questions/76530311/mermaid-in-docsify-return-object-promise 
+		-->
 		<!-- <script src="dist/mermaid/mermaid.min.js"></script> -->
-		<script src="https://cdn.bootcdn.net/ajax/libs/mermaid/10.4.0/mermaid.min.js"></script>
-		<!-- <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script> -->
+		<!-- <script src="https://cdn.bootcdn.net/ajax/libs/mermaid/10.4.0/mermaid.min.js"></script> -->
+		<script src="https://cdn.bootcdn.net/ajax/libs/mermaid/9.4.3/mermaid.min.js"></script>
+		<!-- <script src="https://cdn.jsdelivr.net/npm/mermaid@9.4.3/dist/mermaid.min.js"></script> -->
 	</head>
 	<body>
 		<div id="app"></div>
@@ -124,8 +130,8 @@
 						'<hr/>',
 						// copy from https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20a%20Library.html
 						'<footer style="padding-bottom: 30px; text-align: center;"> © Copyright 2000-2023 12302, Inc. and Contributors. Created using ' + 
-							'<a style="color: inherit; text-decoration: underline;" href="https://docsify.js.org/#/">docsify  </a>' + 
-							'<a style="color: inherit; text-decoration: underline;" href="https://github.com/docsifyjs/docsify/tree/e80238d4fca46b061a97c27744c9595c60ecc05c"> ' + window.Docsify.version + ' </a>' + 
+							'<a style="color: inherit; text-decoration: underline;" href="https://docsify.js.org/#/" target="_blank">docsify  </a>' + 
+							'<a style="color: inherit; text-decoration: underline;" href="https://github.com/docsifyjs/docsify/tree/e80238d4fca46b061a97c27744c9595c60ecc05c" target="_blank"> ' + window.Docsify.version + ' </a>' + 
 						'</br> </footer>',
 					].join('');
 
