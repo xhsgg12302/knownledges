@@ -18,7 +18,6 @@
         + [JVM](docs/doc/advance/jvm/jvm.md)
         + [REDIS](docs/doc/advance/redis/redis.md)
         + [ZOOKEEPER](docs/doc/advance/zookeeper/zk.md)
-        + [NETTY](docs/doc/advance/netty/netty.md)
         + [ELASTICSEARCH](docs/doc/advance/es/es.md)
         + [TOMCAT](docs/doc/advance/tomcat/tomcat.md)
         + [MYBATIS](docs/doc/advance/mybatis/mybatis.md)
@@ -33,6 +32,10 @@
             - [JAVACPP](docs/doc/advance/native/javacpp.md)
         + [LOG FRAMEWORK](docs/doc/advance/log-framework/)
             - [JUL](docs/doc/advance/log-framework/jul.md)
+    
+    - [FRAMEWORK](docs/doc/framework/)
+        + [NETTY](docs/doc/framework/netty/)
+            - [placeholder](docs/doc/framework/netty/netty.md)
 
     - [MYSQL](docs/doc/advance/mysql/README.md)
         + [BOOK](docs/doc/advance/mysql/book/)
