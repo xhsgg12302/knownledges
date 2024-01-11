@@ -35,7 +35,9 @@
     
     - [FRAMEWORK](docs/doc/framework/)
         + [NETTY](docs/doc/framework/netty/)
-            - [placeholder](docs/doc/framework/netty/netty.md)
+            - [LESSON](docs/doc/framework/netty/lesson/)
+                * [01-NETTY_CODE_FLOW](docs/doc/framework/netty/lesson/01_netty-code-flow.md)
+            - [NETTY_RW](docs/doc/framework/netty/netty.md)
 
         + [MYSQL](docs/doc/framework/mysql/README.md)
             - [BOOK](docs/doc/framework/mysql/book/)
