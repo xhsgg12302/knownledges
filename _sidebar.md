@@ -2,7 +2,8 @@
 * DOC
     - [BASE](docs/doc/base/)
         + [OBJECT ORIENTED](docs/doc/base/OO.md)
-        + [IO STREAM](docs/doc/base/IO.md)
+        + [IO STREAM](docs/doc/base/IO/)
+            - [USAGE](docs/doc/base/IO/IO.md) 
         + [NETWORK](docs/doc/base/network.md)
         + [THREAD](docs/doc/base/thread.md)
         + [COLLECTION](docs/doc/base/collection.md)
