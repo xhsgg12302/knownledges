@@ -13,6 +13,7 @@
 
 	- [ADVANCE](docs/doc/advance/)	
         + [JDK](docs/doc/advance/jdk/)
+            - [BUILD](docs/doc/advance/jdk/build.md)
         + [DESIGN PATTERN](docs/doc/advance/design-pattern/)
             - [SINGLETON](docs/doc/advance/design-pattern/singleton.md)
         + [JVM](docs/doc/advance/jvm/jvm.md)
