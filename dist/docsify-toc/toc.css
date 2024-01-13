@@ -9,7 +9,9 @@
 }
 .nav {
   width: var(--toc-width, 240px);
-  padding-top: 100px;
+
+  /* update by 12302; */
+  padding-top: 50px;
   align-self: flex-start;
   flex: 0 0 auto;
 }
