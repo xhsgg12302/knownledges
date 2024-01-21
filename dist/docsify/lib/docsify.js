@@ -7706,6 +7706,13 @@
     });
   };
 
+  function normalPath(normalPath){
+    while(normalPath.indexOf('../') !== -1){
+      normalPath = normalPath.replace(/\w+\/\.\.\//, "");
+    }
+    return normalPath.replace('\.\/','');
+  }
+  
   var linkCompiler = function (ref) {
       var renderer = ref.renderer;
       var router = ref.router;
@@ -7727,6 +7734,12 @@
           : '';
       title = str;
 
+      // update relative path by 12302
+      // ../maven.md
+      if(/\.{1,2}\//.test(href)){
+        path = router.getCurrentPath();
+        href = normalPath(path.substring(0, path.lastIndexOf('/')) + '/' + href);
+      }
       if (
         !isAbsolutePath(href) &&
         !compilerClass._matchNotCompileLink(href) &&
