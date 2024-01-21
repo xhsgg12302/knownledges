@@ -106,6 +106,7 @@
         * [MAVEN](docs/devops/build/maven.md)
         * [GRADLE](docs/devops/build/gradle/)
             + [RECONGIZE](docs/devops/build/gradle/gradle.md)
+            + [USAGE](docs/devops/build/gradle/usage.md)
     - [NETWORK](docs/devops/network/)
         * [STACK](docs/devops/network/network-stack.md)
         * [TCP](docs/devops/network/tcp.md)
