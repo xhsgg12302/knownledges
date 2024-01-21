@@ -192,6 +192,17 @@ function plugin(hook, vm) {
       tocChild[0].parentNode.removeChild(tocChild[0]);
     }
 
+    var header = [
+      '<p style="float: left"><a style="text-decoration: underline; cursor: pointer; color:#347131;"',
+      'onclick="EditOnGithubPlugin.onClick(event)">',
+      'view on github',
+      '</a></p>'
+    ].join('')
+    var viewOnGithub = document.createElement('div');
+    viewOnGithub.innerHTML = header
+    viewOnGithub.setAttribute('style','position:fixed; margin-top: -60px')
+
+    nav.appendChild(viewOnGithub)
     nav.appendChild(container);
   });
 }

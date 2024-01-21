@@ -40,18 +40,18 @@
         EditOnGithubPlugin.editDoc(event, vm)
       }
 
-      if (isFunction(title)) {
+      // if (isFunction(title)) {
 
-        hook.afterEach(function (html) {
-          return html +  generateHeader(title(vm.route.file))
-        })
-      } else {
-        var header = generateHeader(title)
+      //   hook.afterEach(function (html) {
+      //     return html +  generateHeader(title(vm.route.file))
+      //   })
+      // } else {
+      //   var header = generateHeader(title)
 
-        hook.afterEach(function (html) {
-          return html + header
-        })
-      }
+      //   hook.afterEach(function (html) {
+      //     return html + header
+      //   })
+      // }
 
 
     }

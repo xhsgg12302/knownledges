@@ -127,9 +127,11 @@
 
 			plugins: [
 				// remove edit on github plugin
-				// EditOnGithubPlugin.create(
-				// 	'https://github.com/xhsgg12302/knownledges/blob/master/',
-				// ),
+				EditOnGithubPlugin.create(
+					'',
+					'https://github.com/xhsgg12302/knownledges/blob/master/',
+					'view on github'
+				),
 				function(hook, vm) {
 					var footer = [
 						'<hr/>',
