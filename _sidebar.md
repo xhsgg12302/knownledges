@@ -17,7 +17,7 @@
         + [JDK](/docs/doc/advance/jdk/)
             - [BUILD](/docs/doc/advance/jdk/build.md)
         + [DESIGN PATTERN](/docs/doc/advance/design-pattern/)
-            - [SINGLETON](/docs/doc/advance/design-pattern/singleton.md)
+            - [01-SINGLETON](/docs/doc/advance/design-pattern/singleton.md)
         + [JVM](/docs/doc/advance/jvm/jvm.md)
         + [REDIS](/docs/doc/advance/redis/redis.md)
         + [ZOOKEEPER](/docs/doc/advance/zookeeper/zk.md)
