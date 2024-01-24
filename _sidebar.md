@@ -19,6 +19,7 @@
         + [DESIGN PATTERN](/docs/doc/advance/design-pattern/)
             - [01-SINGLETON](/docs/doc/advance/design-pattern/01-singleton.md)
             - [02-FACTORY](/docs/doc/advance/design-pattern/02-factory.md)
+            - [03-ABSTRACT-FACTORY](/docs/doc/advance/design-pattern/03-abstract-factory.md)
         + [JVM](/docs/doc/advance/jvm/jvm.md)
         + [REDIS](/docs/doc/advance/redis/redis.md)
         + [ZOOKEEPER](/docs/doc/advance/zookeeper/zk.md)
