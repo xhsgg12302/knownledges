@@ -5764,7 +5764,7 @@
       // update  by 12302
       if (!isImageAbsolutePath(href)) {
         url = getPath(contentBase, getParentPath(router.getCurrentPath()), href);
-      }else{ url = getPath(contentBase, '', href); }
+      }else{ if(!href.startsWith('http')){ url = getPath(contentBase, '', href); }}
 
       if (attrs.length > 0) {
         return ("<img src=\"" + url + "\" data-origin=\"" + href + "\" alt=\"" + text + "\" " + (attrs.join(
