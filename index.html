@@ -21,7 +21,7 @@
 		<link rel="stylesheet" href="dist/docsify-gifcontrol/docsify-gifcontrol.css">
 
 		<script src="dist/docsify-edit-on-github/index.js"></script>
-
+		
 		<link rel="stylesheet" href="dist/index.css">
 
 		<!-- 
@@ -39,7 +39,7 @@
 		<!-- <script src="dist/mermaid/mermaid.min.js"></script> -->
 		<script src="https://cdn.staticfile.net/mermaid/9.4.3/mermaid.min.js"></script>
 		<!-- <script src="https://cdn.jsdelivr.net/npm/mermaid@9.4.3/dist/mermaid.min.js"></script> -->
-	</head>
+			</head>
 	<body>
 		<div id="app"></div>
 		<script>
@@ -169,8 +169,10 @@
 		</script>
 		<!-- Docsify v4 -->
 		<script src="dist/docsify/lib/docsify.js"></script>
-		<script src="dist/docsify/lib/plugins/search.min.js"></script>
+
 		<!-- <script src="//unpkg.com/docsify-algolia-search-plugin"></script> -->
+		<script src="dist/docsify/lib/plugins/search.min.js"></script>
+
 		<!-- 
 			https://docsify.js.org/#/helpers?id=image,
 		-->
@@ -180,9 +182,43 @@
 		<!-- https://github.com/mrpotatoes/docsify-toc not complete, so comment-->
 		<script src="dist/docsify-toc/toc.js"></script>
 
+		<!-- auto collapse tree see: https://github.com/iPeng6/docsify-sidebar-collapse -->
+		<script src="dist/docsify-sidebar-collapse/docsify-sidebar-collapse.min.js"></script>
+
+		<!-- docsify-tabs see: https://jhildenbiddle.github.io/docsify-tabs/#/ -->
+		<script src="dist/docsify-tabs/docsify-tabs-js.js"></script>
+
+		<!-- gifcontrol : https://github.com/gbodigital/docsify-gifcontrol  -->
+		<script src="dist/docsify-gifcontrol/docsify-gifcontrol.js"></script>
+
+
+		<!-- TOP -->
+		<!-- https://bytesfly.github.io/blog/#/LeetCode/0206-reverse-linked-list -->
+		<!-- <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.goup.js"></script>
+		<script type="text/javascript">
+		  	$(document).ready(function () {
+				$.goup({
+					trigger: 100,
+					bottomOffset: 52,
+					locationOffset: 25,
+					//title: 'TOP',
+					titleAsText: true
+				});
+		  	});
+		</script> 
+		https://github.com/vfeskov/vanilla-back-to-top/blob/v7.2.1/OPTIONS.md
+		-->
+		<script src="dist/vanilla-back-to-top/vanilla-back-to-top.min.js"></script>
+		<!-- <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script> -->
+		<script>addBackToTop({diameter: 56, backgroundColor: 'rgb(255, 82, 82)', textColor: '#fff'})</script>
+		<!-- <script>addBackToTop({diameter: 56, backgroundColor: 'rgb(66, 185, 131)', textColor: '#fff'})</script> -->
+
+
 		<!-- docsify-copy-code -->
 		<script src="dist/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
 		<!-- <script src="https://cdn.bootcdn.net/ajax/libs/docsify-copy-code/3.0.0/docsify-copy-code.min.js"></script> -->
+		<!-- <script src="https://cdn.staticfile.net/docsify-copy-code/2.1.1/docsify-copy-code.min.js"></script> -->
 
 		<!-- prism -->
 		<script src="https://cdn.staticfile.net/prism/1.23.0/components/prism-java.min.js"></script>
@@ -200,11 +236,6 @@
 		<!-- prism plugins-->
 		<script src="https://cdn.staticfile.net/prism/1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
 
-		<!-- auto collapse tree see: https://github.com/iPeng6/docsify-sidebar-collapse -->
-		<script src="dist/docsify-sidebar-collapse/docsify-sidebar-collapse.min.js"></script>
-
-		<!-- docsify-tabs see: https://jhildenbiddle.github.io/docsify-tabs/#/ -->
-		<script src="dist/docsify-tabs/docsify-tabs-js.js"></script>
 
 		<!-- 
 			1. https://github.com/pfeak/docsify-updated
@@ -216,31 +247,6 @@
 		-->
 		<!-- <script src="https://cdn.jsdelivr.net/npm/docsify-updated/src/time-updater.min.js"></script> -->
 
-		<!-- gifcontrol : https://github.com/gbodigital/docsify-gifcontrol  -->
-		<script src="dist/docsify-gifcontrol/docsify-gifcontrol.js"></script>
-
-		<!-- TOP -->
-		<!-- https://bytesfly.github.io/blog/#/LeetCode/0206-reverse-linked-list -->
-		<!-- <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.js"></script>
-		<script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.goup.js"></script>
-		<script type="text/javascript">
-		  	$(document).ready(function () {
-				$.goup({
-					trigger: 100,
-					bottomOffset: 52,
-					locationOffset: 25,
-					//title: 'TOP',
-					titleAsText: true
-				});
-		  	});
-		</script> 
-		
-		https://github.com/vfeskov/vanilla-back-to-top/blob/v7.2.1/OPTIONS.md
-		-->
-		<script src="dist/vanilla-back-to-top/vanilla-back-to-top.min.js"></script>
-		<!-- <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script> -->
-		<script>addBackToTop({diameter: 56, backgroundColor: 'rgb(255, 82, 82)', textColor: '#fff'})</script>
-		<!-- <script>addBackToTop({diameter: 56, backgroundColor: 'rgb(66, 185, 131)', textColor: '#fff'})</script> -->
 		
 		<!-- 
 			Another alternative product : https://giscus-component.vercel.app/
