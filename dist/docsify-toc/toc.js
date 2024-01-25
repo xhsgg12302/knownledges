@@ -193,9 +193,9 @@ function plugin(hook, vm) {
     }
 
     var header = [
-      '<p style="float: left"><a style="text-decoration: underline; cursor: pointer; color:#347131;"',
+      '<p style="float: left"><a style="text-decoration: underline; cursor: pointer; color:#347131;font-weight: bold;font-size: 17px;font-style: italic;"',
       'onclick="EditOnGithubPlugin.onClick(event)">',
-      'view on github',
+      'View page on github',
       '</a></p>'
     ].join('')
     var viewOnGithub = document.createElement('div');
