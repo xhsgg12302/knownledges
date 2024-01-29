@@ -22,6 +22,7 @@
             - [03-ABSTRACT-FACTORY](/docs/doc/advance/design-pattern/03-abstract-factory.md)
             - [06-ADAPTER](/docs/doc/advance/design-pattern/06-adapter.md)
             - [13-CHAIN-OF-RESPONSIBILITY](/docs/doc/advance/design-pattern/13-chain-of-responsibility.md)
+            - [21-STRATEGY](/docs/doc/advance/design-pattern/21-strategy.md)
             - [22-TEMPLATE](/docs/doc/advance/design-pattern/22-template.md)
         + [JVM](/docs/doc/advance/jvm/jvm.md)
         + [REDIS](/docs/doc/advance/redis/redis.md)
