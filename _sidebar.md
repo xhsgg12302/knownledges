@@ -12,7 +12,7 @@
         + [AQS](/docs/doc/base/AQS.md)
         + [JAVAAGENT](/docs/doc/base/javaagent.md)
 
-	- [ADVANCE](/docs/doc/advance/)	
+	- [ADVANCE](/docs/doc/advance/)
         + [DEBUG](/docs/doc/advance/debug.md)
         + [JDK](/docs/doc/advance/jdk/)
             - [BUILD](/docs/doc/advance/jdk/build.md)
