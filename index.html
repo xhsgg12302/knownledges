@@ -156,11 +156,11 @@
 						'</br> </footer>',
 					].join('');
 
-					var discussion = '<iframe class="giscus-iframe">';
+					var discussion = '<hr/><div class="giscus"></div>';
 
 					hook.afterEach(function(html) {
 						const subscription = ``;
-						return html + footer + subscription;
+						return html + discussion + footer + subscription;
 					});
 
 					// 貌似代码过长会导致对齐差距越明显，暂时停用
