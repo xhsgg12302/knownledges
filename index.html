@@ -124,6 +124,21 @@
 				formatUpdated: "{YYYY}/{MM}/{DD} {HH}:{mm}:{ss}",
 			},
 
+			giscus: {
+				repo: "xhsgg12302/knownledges",
+				repoId: "R_kgDOHYYICg",
+				category: "Announcements",
+				categoryId: "DIC_kwDOHYYICs4Cc3QY",
+				mapping: "pathname",
+				strict: "0",
+				reactionsEnabled: "1",
+				emitMetadata: "0",
+				inputPosition: "bottom",
+				theme: "preferred_color_scheme",
+				lang: "en",
+				loading: "lazy"
+			},
+
 			plugins: [
 				// remove edit on github plugin
 				EditOnGithubPlugin.create(
@@ -140,6 +155,8 @@
 							'<a style="color: inherit; text-decoration: underline;" href="https://github.com/docsifyjs/docsify/tree/e80238d4fca46b061a97c27744c9595c60ecc05c" target="_blank"> ' + window.Docsify.version + ' </a> [Updated]' + 
 						'</br> </footer>',
 					].join('');
+
+					var discussion = '<iframe class="giscus-iframe">';
 
 					hook.afterEach(function(html) {
 						const subscription = ``;
@@ -266,5 +283,17 @@
 				})
 			</script>
 		-->
+
+		
+		<!-- 
+			docsify-giscus 
+			https://github.com/mg0324/docsify-giscus
+		-->
+		<script src="dist/docsify-giscus/docsify-giscus.min.js"></script>
+		<!-- <script src="https://giscus.app/client.js" data-repo="xhsgg12302/knownledges" data-repo-id="R_kgDOHYYICg" data-category="Announcements"
+			data-category-id="DIC_kwDOHYYICs4Cc3QY" data-mapping="pathname"
+			data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom"
+			data-theme="preferred_color_scheme" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous" async>
+		</script> -->
 	</body>
 </html>
