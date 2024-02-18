@@ -1,4 +1,4 @@
-name: deploy mardown files to VPS[CVM]
+name: deploy MD files of master branch to VPS[CVM]
 on:
   push:
     branches:
