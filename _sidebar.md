@@ -155,7 +155,6 @@
             + [VISCOSITY](/docs/devops/os/mac/viscosity.md)
         * [LINUX](/docs/devops/os/)
             + [AUTO_UP](/docs/devops/os/linux/auto-up.md) 
-            + [FILE_SIZE](/docs/devops/os/linux/file-size.md) 
             + [NO_PASS_LOGIN](/docs/devops/os/linux/no-pass-login.md) 
         * [WINDOWS](/docs/devops/os/)
             + [NETSH](/docs/devops/os/win/netsh.md)
