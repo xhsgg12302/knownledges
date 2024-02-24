@@ -49,7 +49,8 @@
         panelWrapperMarkup: /[\r\n]*(\s*)(<!-+\s+panels:\s*?start\s+-+>)[\r\n]+([\s|\S]*?)[\r\n\s]+(<!-+\s+panels:\s*?end\s+-+>)/m,
         // update by 12302
         //panelMarkup: /<!-+\s+div:\s*(.*)\s+-+>[\r\n]+([\s\S]*?)[\r\n]+((?=<!-+\s+div:?)|(?=<!-+\s+panels?))/m
-        panelMarkup: /<!-+\s+div:\s*(.*)\s+-+>[\r\n]+([\s\S]*?)[\r\n]+((?=\s*<!-+\s+div:?)|(?=\s*<!-+\s+panels?))/m
+        panelMarkup: /<!-+\s+div:\s*(.*)\s+-+>[\r\n]+([\s\S]*?)[\r\n]+((?=\s*<!-+\s+div:?)|(?=\s*<!-+\s+panels?))/m,
+        maxWidth: /(.*)(-(\d*))/
     };
     function renderPanelsStage1(content) {
         var codeBlockMatch = content.match(regex.codeMarkup) || [];
@@ -74,7 +75,13 @@
                 while ((panelMatch = regex.panelMarkup.exec(panelWrapper)) !== null) {
                     var panelName = panelMatch[1].trim().toLowerCase();
                     var panelContent = panelMatch[2].trim();
-                    panelWrapper = panelWrapper.replace(panelMatch[0], [ "\n".concat(panelWrapperIndent, "\x3c!-- ").concat(commentReplaceMark, ' <div class="').concat([ classNames.panelContainer, panelName ].join(" "), '"> --\x3e'), "\n\n".concat(panelWrapperIndent).concat(panelContent), "\n\n".concat(panelWrapperIndent, "\x3c!-- ").concat(commentReplaceMark, " </div> --\x3e") ].join(""));
+
+                    // update by 12302
+                    // append explicit 'style=max-width:x%'
+                    var panelNameMatch = regex.maxWidth.exec(panelName),maxWidth= 0;
+                    if(panelNameMatch[3]){ panelName = panelNameMatch[1]; maxWidth = panelNameMatch[3];}
+                    var styleStr = (maxWidth > 0) ?'style=\"max-width:' + maxWidth +'%;\"' : '';
+                    panelWrapper = panelWrapper.replace(panelMatch[0], [ "\n".concat(panelWrapperIndent, "\x3c!-- ").concat(commentReplaceMark, ' <div class="').concat([ classNames.panelContainer, panelName ].join(" "), '" ' + styleStr +'> --\x3e'), "\n\n".concat(panelWrapperIndent).concat(panelContent), "\n\n".concat(panelWrapperIndent, "\x3c!-- ").concat(commentReplaceMark, " </div> --\x3e") ].join(""));
                 }
             }
             panelWrapper = panelWrapper.replace(panelWrapperStart, panelStartReplacement);
