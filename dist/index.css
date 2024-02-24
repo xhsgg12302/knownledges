@@ -126,3 +126,53 @@ aside a {
     border:0px;
     min-height: 200px;
 }
+
+/* copy from https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css */
+:root {
+    --mono-hue: 113;
+    --mono-saturation: 0%;
+    --mono-tint2: hsl(var(--mono-hue), var(--mono-saturation), 89%);
+    --heading-border-color: var(--mono-tint2);
+}
+
+.docsify-example-panel.title-panel h1{
+    padding: 0 0 1rem 0;
+    border-width: 0 0 1.5px 0;
+    border-style: solid;
+    border-color: var(--heading-border-color);
+}
+
+.docsify-example-panel.title-panel h2{
+    padding: 0 0 1rem 0;
+    border-width: 0 0 1.5px 0;
+    border-style: solid;
+    border-color: var(--heading-border-color);
+}
+
+.docsify-example-panel.title-panel h3{
+    padding: 0 0 1rem 0;
+    border-width: 0 0 1.5px 0;
+    border-style: solid;
+    border-color: var(--heading-border-color);
+}
+
+.docsify-example-panel.title-panel h4{
+    padding: 0 0 1rem 0;
+    border-width: 0 0 1.5px 0;
+    border-style: solid;
+    border-color: var(--heading-border-color);
+}
+
+.docsify-example-panel.title-panel h5{
+    padding: 0 0 1rem 0;
+    border-width: 0 0 1.5px 0;
+    border-style: solid;
+    border-color: var(--heading-border-color);
+}
+
+.docsify-example-panel.title-panel h6{
+    padding: 0 0 1rem 0;
+    border-width: 0 0 1.5px 0;
+    border-style: solid;
+    border-color: var(--heading-border-color);
+}
