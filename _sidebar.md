@@ -6,7 +6,7 @@
             - [USAGE](/docs/doc/base/IO/IO.md) 
         + [NETWORK](/docs/doc/base/network.md)
         + [THREAD](/docs/doc/base/thread.md)
-        + [COLLECTION MAP](/docs/doc/base/collection_map/)
+        + [COLLECTION & MAP](/docs/doc/base/collection_map/)
             - [HASHMAP](/docs/doc/base/collection_map/hashmap.md)
         + [EXCEPTION](/docs/doc/base/exception.md)
         + [ADVANCE](/docs/doc/base/advance.md)
