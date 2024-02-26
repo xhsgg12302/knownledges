@@ -179,7 +179,7 @@
         + [INSERTION](/docs/algo/sort/insertion-sort.md)
     - [TREE](/docs/algo/tree/)
         + [BINARYTREE](/docs/algo/tree/01-binary-tree.md)
-        + [AVL](/docs/algo/tree/03_01-AVL-tree.md)
+        + [AVL](/docs/algo/tree/03-AVL-tree.md)
     - [LINKED](/docs/algo/linked.md)
     - [ARRAY](/docs/algo/array.md)
     - [STACK](/docs/algo/stack.md)
