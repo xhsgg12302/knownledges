@@ -180,6 +180,7 @@
     - [TREE](/docs/algo/tree/)
         + [BINARYTREE](/docs/algo/tree/01-binary-tree.md)
         + [AVL](/docs/algo/tree/03-01-AVL-tree.md)
+        + [RED-BLACK](/docs/algo/tree/03-02-RB-tree.md)
     - [LINKED](/docs/algo/linked.md)
     - [ARRAY](/docs/algo/array.md)
     - [STACK](/docs/algo/stack.md)
