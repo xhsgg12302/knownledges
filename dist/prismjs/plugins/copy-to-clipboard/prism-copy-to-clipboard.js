@@ -22,9 +22,14 @@
 	 * @property {(reason: unknown) => void} error
 	 */
 	function registerClipboard(element, copyInfo) {
-		element.addEventListener('click', function () {
-			copyTextToClipboard(copyInfo);
-		});
+
+		// update by 12302
+		// copy docsify-copy-code.js#76-77
+		var listenerHost = document.querySelector(".content");
+		listenerHost.addEventListener("click", function(evt) {
+			var isCopyCodeButton = evt.target.parentElement.classList.contains("copy-to-clipboard-button");
+			if(isCopyCodeButton) { copyTextToClipboard(copyInfo);}
+		})
 	}
 
 	// https://stackoverflow.com/a/30810322/7595472

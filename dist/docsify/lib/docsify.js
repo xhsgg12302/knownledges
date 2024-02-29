@@ -7652,7 +7652,7 @@
       var htmlString = ("<pre v-pre data-lang=\"" + lang + "\"><code class=\"line-numbers lang-" + lang + "\">" + '' + "</code></pre>");
       var element = htmlToElement(htmlString);
       prism.highlightElement(element.querySelector('code'), false, null, code.replace(/@DOCSIFY_QM@/g, '`'))
-      return windowsStyle + element.outerHTML;
+      return windowsStyle + element.parentNode.outerHTML;
     });
   };
 
