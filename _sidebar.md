@@ -60,8 +60,6 @@
             - [RECORD](/docs/doc/framework/mysql/record.md)
             <!-- - [SPEC](/docs/doc/framework/mysql/spec.html) -->
             - [SPECIFICATION](/docs/doc/framework/mysql/specification.md)
-        
-        + [MYBATIS](/docs/doc/framework/mybatis/mybatis.md)
 
         + [SPRING](/docs/doc/framework/spring/)
             - [SPRING](/docs/doc/framework/spring/spring.md)
@@ -73,6 +71,7 @@
             - [JUL](/docs/doc/framework/log-framework/jul.md)
 
         + [XML](/docs/doc/framework/xml-schema/)
+        + [MYBATIS](/docs/doc/framework/mybatis/mybatis.md)
         + [REDIS](/docs/doc/framework/redis/redis.md)
         + [ZOOKEEPER](/docs/doc/framework/zookeeper/zk.md)
         + [ELASTICSEARCH](/docs/doc/framework/es/es.md)
