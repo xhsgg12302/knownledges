@@ -15,7 +15,7 @@
         + [JAVAAGENT](/docs/doc/advance/javaagent.md)
         + [BYTECODE](/docs/doc/advance/bytecode.md)
         + [RUNTIME](/docs/doc/advance/runtime.md)
-        + [JVM](/docs/doc/advance/jvm/jvm.md)
+        + [JVM](/docs/doc/advance/jvm.md)
         + [DEBUG](/docs/doc/advance/debug.md)
         + [JDK](/docs/doc/advance/jdk/)
             - [BUILD](/docs/doc/advance/jdk/build.md)
