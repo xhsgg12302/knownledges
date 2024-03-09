@@ -135,9 +135,24 @@ var buildTOC = function(options) {
   return ret;
 };
 
+// view function
+function viewDoc(event, vm) {
+  var docName = vm.route.file
+  if (docName) {
+    var viewLink = 'https://github.com/xhsgg12302/knownledges/blob/master/' + docName
+    window.open(viewLink)
+    event.preventDefault()
+    return false
+  } else {
+    return true
+  }
+}
+
 // Docsify plugin functions
 function plugin(hook, vm) {
   var userOptions = vm.config.toc;
+
+  window.viewDocFun = function(event) { viewDoc(event, vm) }
 
   hook.mounted(function () {
     var content = window.Docsify.dom.find(".content");
@@ -194,7 +209,7 @@ function plugin(hook, vm) {
 
     var header = [
       '<p style="float: left"><a style="text-decoration: underline; cursor: pointer; color:#347131;font-weight: bold;font-size: 17px;font-style: italic;"',
-      'onclick="EditOnGithubPlugin.onClick(event)">',
+      'onclick="viewDocFun(event)">',
       'View page on github',
       '</a></p>'
     ].join('')
