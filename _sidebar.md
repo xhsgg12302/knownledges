@@ -13,9 +13,9 @@
         + [AQS](/docs/doc/base/AQS.md)
 
 	- [ADVANCE](/docs/doc/advance/)
-        + [JAVAAGENT](/docs/doc/advance/javaagent.md)
+        + [JAVA AGENT](/docs/doc/advance/javaagent.md)
+        + [JAVA STRACE](/docs/doc/advance/javastrace.md)
         + [BYTECODE](/docs/doc/advance/bytecode.md)
-        + [RUNTIME](/docs/doc/advance/runtime.md)
         + [JVM](/docs/doc/advance/jvm.md)
         + [DEBUG](/docs/doc/advance/debug.md)
         + [JDK](/docs/doc/advance/jdk/)
