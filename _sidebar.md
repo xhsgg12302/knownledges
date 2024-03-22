@@ -134,6 +134,7 @@
             + [FIND](/docs/devops/os/util/find.md)
             + [XARGS](/docs/devops/os/util/xargs.md)
             + [CURL](/docs/devops/os/util/curl.md)
+            + [WGET](/docs/devops/os/util/wget.md)
             + [GREP](/docs/devops/os/util/grep.md)
             + [SED](/docs/devops/os/util/sed.md)
             + [AWK](/docs/devops/os/util/awk.md)
