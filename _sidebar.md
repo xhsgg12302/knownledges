@@ -21,6 +21,7 @@
             - [PLACEHOLDER](/docs/doc/advance/jvm/jvm.md)
             - [TOOLS](/docs/doc/advance/jvm/tools/)
                 * [HSDB](/docs/doc/advance/jvm/tools/hsdb.md)
+                * [JVISUALVM](/docs/doc/advance/jvm/tools/jvisualvm.md)
         + [JDK](/docs/doc/advance/jdk/)
             - [BUILD](/docs/doc/advance/jdk/build.md)
         + [DESIGN PATTERN](/docs/doc/advance/design-pattern/)
