@@ -32,6 +32,7 @@
             - [13-CHAIN-OF-RESPONSIBILITY](/docs/doc/advance/design-pattern/13-chain-of-responsibility.md)
             - [21-STRATEGY](/docs/doc/advance/design-pattern/21-strategy.md)
             - [22-TEMPLATE](/docs/doc/advance/design-pattern/22-template.md)
+            - [23-VISITOR](/docs/doc/advance/design-pattern/23-visitor.md)
         + [NATIVE](/docs/doc/advance/native/)
             - [JNI](/docs/doc/advance/native/jni.md)
             - [JNA](/docs/doc/advance/native/jna.md)
