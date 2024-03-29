@@ -139,6 +139,17 @@
 				loading: "lazy"
 			},
 
+			// https://github.com/fzankl/docsify-plugin-flexible-alerts
+			flexibleAlerts: {
+				style: 'callout', //'flat',
+				comment: {
+					label: 'Comment',
+					// Assuming that we use Font Awesome
+					icon: 'fas fa-comment',
+					className: 'note'
+				}
+			},
+
 			plugins: [
 				function(hook, vm) {
 					var footer = [
@@ -200,6 +211,21 @@
 
 
 		<script src="https://static.wtfu.site/dist/index.js"></script>
+
+		<!-- 
+			pagination
+			https://github.com/imyelo/docsify-pagination
+		 -->
+		<!-- <script src="dist/docsify-pagination/docsify-pagination.min.js"></script> -->
+
+
+		<!-- 
+			alerts
+			https://github.com/fzankl/docsify-plugin-flexible-alerts
+		 -->
+		<!-- <script src="dist/docsify-plugin-flexible-alerts@1.1.1/docsify-plugin-flexible-alerts.min.js"></script> -->
+
+
 		<!-- migrate to index.js -->
 		<!-- Docsify v4 -->
 		<!-- <script src="dist/docsify/lib/docsify.js"></script> -->
