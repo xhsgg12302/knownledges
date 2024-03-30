@@ -1,15 +1,15 @@
 .content {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: center;
+  justify-content: left;
 }
 .markdown-section {
   flex: 1 1 0%;
   margin: 0 48px;
 }
 .nav {
+  transition: transform 0.3s ease; right: 0;position: fixed;
   width: var(--toc-width, 240px);
-
   /* update by 12302; */
   padding-top: 50px;
   align-self: flex-start;
