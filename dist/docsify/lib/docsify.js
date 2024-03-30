@@ -8809,7 +8809,9 @@
         this._updateRender();
         toggleClass(body, 'ready');
         // add close class to body by 12302
-        // toggleClass(body, 'add','close');
+        if(this.route.query.side === 'false'){
+          toggleClass(body, 'add','close');
+        } 
       };
 
       return Render;
