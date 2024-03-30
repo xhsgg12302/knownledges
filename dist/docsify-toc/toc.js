@@ -153,6 +153,10 @@ function plugin(hook, vm) {
   var userOptions = vm.config.toc;
 
   window.viewDocFun = function(event) { viewDoc(event, vm) }
+  window.navToggleSpan = function(evnet) {
+    const asideNav = document.querySelector('aside.nav');
+    asideNav.style.transform = asideNav.style.transform ? '' : 'translateX(var(--toc-width,240px))';
+  }
 
   hook.mounted(function () {
     var content = window.Docsify.dom.find(".content");
@@ -217,6 +221,13 @@ function plugin(hook, vm) {
     viewOnGithub.innerHTML = header
     viewOnGithub.setAttribute('style','position:fixed; margin-top: -60px')
 
+    var span = document.createElement('span')
+    span.innerHTML = '<i style="cursor: pointer;" class="fa-solid fa-list-ul"></i>';
+    span.setAttribute('style', 'position: absolute;left: -34px; font-size: 18px;')
+    span.setAttribute('id', 'aside-nav-toggle-id-12302')
+    span.setAttribute('onclick','navToggleSpan()');
+
+    nav.appendChild(span);
     nav.appendChild(viewOnGithub)
     nav.appendChild(container);
   });
