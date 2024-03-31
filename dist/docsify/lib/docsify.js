@@ -5761,18 +5761,23 @@
         attrs.push(("id=\"" + (config.id) + "\""));
       }
 
+      var outerCtl = '';
+      if(config.align) {
+        outerCtl = 'center';
+      }
+
       // update  by 12302
       if (!isImageAbsolutePath(href)) {
         url = getPath(contentBase, getParentPath(router.getCurrentPath()), href);
       }else{ if(!href.startsWith('http')){ url = getPath(contentBase, '', href); }}
 
       if (attrs.length > 0) {
-        return ("<img src=\"" + url + "\" data-origin=\"" + href + "\" alt=\"" + text + "\" " + (attrs.join(
+        return (outerCtl + "<img src=\"" + url + "\" data-origin=\"" + href + "\" alt=\"" + text + "\" " + (attrs.join(
           ' '
         )) + " />");
       }
 
-      return ("<img src=\"" + url + "\" data-origin=\"" + href + "\" alt=\"" + text + "\"" + attrs + ">");
+      return (outerCtl + "<img src=\"" + url + "\" data-origin=\"" + href + "\" alt=\"" + text + "\"" + attrs + ">");
     });
   };
 
@@ -7661,13 +7666,19 @@
 
       return (renderer.paragraph = function (text) {
       var result;
+
       // update by 12302
+      var isCenter = false;
+      text = text.replace(/(^\s*)center(?=<)(.*)/g, function(match, p1,p2) {
+        isCenter = true;
+        return p1 + p2;
+      });
       if (/^\s*!&gt;/.test(text)) {
         result = helper('tip', text);
       } else if (/^\s*\?&gt;/.test(text)) {
         result = helper('warn', text);
       } else {
-        result = "<p>" + text + "</p>";
+        result = "<p" + (isCenter ? " style=\"text-align: center;\"" : "") + ">" + text + "</p>";
       }
 
       return result;
