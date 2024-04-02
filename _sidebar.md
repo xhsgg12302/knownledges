@@ -197,9 +197,6 @@
 ----------------------------------------------------------------------------------------------------
 * [OTHER](/docs/other/)
     - [DOCSIFY_DOC](https://docsify.js.org/#/zh-cn/)
-    - [REVIEW](/docs/other/hr/review-preparement.md)
-    - [HR_PROBLEM](/docs/other/hr/hr.md)
-    - [CTO_PROBLEM](/docs/other/hr/cto.md)
-    - [TEMP](/docs/template/temp/render/)
-        + [RENDER](/docs/template/temp/render/md/render.md)
+    - [TEMP](/docs/template/)
+        + [RENDER](/docs/template/temp/)
 
