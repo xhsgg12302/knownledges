@@ -18,7 +18,6 @@
         + [BYTECODE](/docs/doc/advance/bytecode.md)
         + [DEBUG](/docs/doc/advance/debug.md)
         + [JVM](/docs/doc/advance/jvm/)
-            - [PLACEHOLDER](/docs/doc/advance/jvm/jvm.md)
             - [TOOLS](/docs/doc/advance/jvm/tools/)
                 * [HSDB](/docs/doc/advance/jvm/tools/hsdb.md)
                 * [JVISUALVM](/docs/doc/advance/jvm/tools/jvisualvm.md)
