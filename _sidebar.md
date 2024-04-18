@@ -145,7 +145,7 @@
             + [NMAP](/docs/devops/os/util/nmap.md)
             + [FIREWALLD](/docs/devops/os/util/firewalld.md)
             + [HASHCAT](/docs/devops/os/util/hashcat.md)
-            + [GunPG](/docs/devops/os/util/GunPG.md)
+            + [GnuPG](/docs/devops/os/util/GnuPG.md)
             + [OPENSSL](/docs/devops/os/util/openssl.md)
             + [OSSUTILS](/docs/devops/os/util/ossutils.md)
             + [VIM](/docs/devops/os/util/vim.md)
