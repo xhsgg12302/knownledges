@@ -5,6 +5,8 @@
         + [STRING](/docs/doc/base/string.md)
         + [IO STREAM](/docs/doc/base/IO/)
             - [USAGE](/docs/doc/base/IO/IO.md) 
+            - [NIO](/docs/doc/base/IO/NIO/)
+                * [SCALABLE_IO_IN_JAVA](/docs/doc/base/IO/NIO/scalable-io-in-java.md)
         + [NETWORK](/docs/doc/base/network.md)
         + [THREAD](/docs/doc/base/thread.md)
         + [COLLECTION & MAP](/docs/doc/base/collection_map/)
