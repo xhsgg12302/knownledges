@@ -74,10 +74,10 @@
             - [SPRINGBOOT](/docs/doc/framework/spring/springboot.md)
             - [SPRINTCLOUD](/docs/doc/framework/spring/springcloud.md)
         
-        + [LOG FRAMEWORK](/docs/doc/framework/log-framework/)
-            - [JUL](/docs/doc/framework/log-framework/jul.md)
+        + [LOG FRAMEWORK](/docs/doc/framework/log_framework/)
+            - [JUL](/docs/doc/framework/log_framework/jul.md)
 
-        + [XML](/docs/doc/framework/xml-schema/)
+        + [XML](/docs/doc/framework/xml_schema/)
         + [MYBATIS](/docs/doc/framework/mybatis/mybatis.md)
         + [REDIS](/docs/doc/framework/redis/redis.md)
         + [ZOOKEEPER](/docs/doc/framework/zookeeper/zk.md)
