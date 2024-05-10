@@ -79,7 +79,9 @@
 
         + [XML](/docs/doc/framework/xml_schema/)
         + [MYBATIS](/docs/doc/framework/mybatis/mybatis.md)
-        + [REDIS](/docs/doc/framework/redis/redis.md)
+        + [REDIS](/docs/doc/framework/redis/)
+            - [INSTALL](/docs/doc/framework/redis/install.md)
+            - [REDIS_RW](/docs/doc/framework/redis/redis.md)
         + [ZOOKEEPER](/docs/doc/framework/zookeeper/zk.md)
         + [ELASTICSEARCH](/docs/doc/framework/es/es.md)
         + [TOMCAT](/docs/doc/framework/tomcat/tomcat.md)
@@ -129,6 +131,7 @@
         * [TCP](/docs/devops/network/tcp.md)
         * [HTTP](/docs/devops/network/http.md)
         * [DNS](/docs/devops/network/dns.md)
+        * [SSH](/docs/devops/network/ssh.md)
         * [STACK](/docs/devops/network/network-stack.md)
         * [DOCKER0](/docs/devops/network/docker0.md)
         * [TUN/TAP](/docs/devops/network/tun-tap.md)
