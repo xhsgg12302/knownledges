@@ -82,7 +82,9 @@
         + [REDIS](/docs/doc/framework/redis/)
             - [INSTALL](/docs/doc/framework/redis/install.md)
             - [REDIS_RW](/docs/doc/framework/redis/redis.md)
-        + [ZOOKEEPER](/docs/doc/framework/zookeeper/zk.md)
+        + [ZOOKEEPER](/docs/doc/framework/zookeeper/)
+            - [INSTALL](/docs/doc/framework/zookeeper/install.md)
+            - [ZOOKEEPER_RW](/docs/doc/framework/zookeeper/zk.md)
         + [ELASTICSEARCH](/docs/doc/framework/es/es.md)
         + [TOMCAT](/docs/doc/framework/tomcat/tomcat.md)
         
