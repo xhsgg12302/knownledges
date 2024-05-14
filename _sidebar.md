@@ -144,6 +144,7 @@
             + [RECORD](/docs/devops/os/shell/record.md)
         * [UTIL](/docs/devops/os/util/)
             + [ADB](/docs/devops/os/util/adb.md)
+            + [BC](/docs/devops/os/util/bc.md)
             + [FIND](/docs/devops/os/util/find.md)
             + [XARGS](/docs/devops/os/util/xargs.md)
             + [CURL](/docs/devops/os/util/curl.md)
