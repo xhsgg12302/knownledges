@@ -170,6 +170,7 @@
             + [AUTOMATOR](/docs/devops/os/mac/automator.md)
             + [BREW](/docs/devops/os/mac/brew.md)
             + [LAUNCHCTL](/docs/devops/os/mac/launchctl.md)
+            + [BURP_SUITE_PRO](/docs/devops/os/mac/burp-suite-pro.md)
             + [VISCOSITY](/docs/devops/os/mac/viscosity.md)
             + [CLEAN_MY_MAC_X](/docs/devops/os/mac/clean-my-mac-x.md)
             + [PARALLELS_DESKTOP](/docs/devops/os/mac/parallels-desktop.md)
