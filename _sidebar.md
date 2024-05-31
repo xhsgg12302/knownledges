@@ -165,6 +165,7 @@
             + [JETBRAINS](/docs/devops/os/softwares/jetbrains/)
                 - [IDEA](/docs/devops/os/softwares/jetbrains/idea-env.md)
                 - [CLION](/docs/devops/os/softwares/jetbrains/clion-env.md)
+                - [RUBYMINE](/docs/devops/os/softwares/jetbrains/rubymine.md)
         * [MAC OSX](/docs/devops/os/mac/)
             + [AUTOSSH](/docs/devops/os/mac/auto-ssh.md)
             + [AUTOMATOR](/docs/devops/os/mac/automator.md)
