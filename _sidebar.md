@@ -57,6 +57,7 @@
                 *  [04-INNODB_RECORD_STRUCT](/docs/doc/framework/mysql/book/04_innodb-record-struct.md)
                 *  [05-INNODB_PAGE_STRUCT](/docs/doc/framework/mysql/book/05_innodb-page-struct.md)
                 *  [06-B+TREE_INDEX](/docs/doc/framework/mysql/book/06_B+tree_index.md)
+                *  [07-B+TREE_INDEX_USE](/docs/doc/framework/mysql/book/07_B+tree_index_use.md)
             - [LESSON](/docs/doc/framework/mysql/lesson/)
                 *  [01-DATABASE_RELATED_CONCEPTS](/docs/doc/framework/mysql/lesson/01_database_related_concepts.md)
                 *  [02-FUNCTION](/docs/doc/framework/mysql/lesson/02_function.md)
