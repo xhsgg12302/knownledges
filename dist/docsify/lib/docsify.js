@@ -3842,7 +3842,9 @@
     fences: /^ {0,3}(`{3,}(?=[^`\n]*\n)|~{3,})([^\n]*)\n(?:|([\s\S]*?)\n)(?: {0,3}\1[~`]* *(?:\n+|$)|$)/,
     hr: /^ {0,3}((?:- *){3,}|(?:_ *){3,}|(?:\* *){3,})(?:\n+|$)/,
     heading: /^ {0,3}(#{1,6})(?=\s|$)(.*)(?:\n+|$)/,
-    blockquote: /^( {0,3}> ?(paragraph|[^\n]*)(?:\n|$))+/,
+    // blockquote: /^( {0,3}> ?(paragraph|[^\n]*)(?:\n|$))+/,
+    // update by 12302, modify '>' to text from blockquote. like this '> [!], > [?]'
+    blockquote: /^( {0,3}>(?! *?\[.\]) ?(paragraph|[^\n]*)(?:\n|$))+/,
     list: /^( {0,3})(bull) [\s\S]+?(?:hr|def|\n{2,}(?! )(?! {0,3}bull )\n*|\s*$)/,
     html: '^ {0,3}(?:' // optional indentation
       + '<(script|pre|style)[\\s>][\\s\\S]*?(?:</\\1>[^\\n]*\\n+|$)' // (1)
@@ -5571,7 +5573,10 @@
 
   function helper(className, content) {
     // update by 12302
-    return ("<p class=\"" + className + "\">" + (content.slice(5 + content.indexOf('&gt')).trim()) + "</p>");
+    // /^\[!\]\s*(.*)$/
+    // return ("<p class=\"" + className + "\">" + (content.slice(5 + content.indexOf('&gt')).trim()) + "</p>");
+    content = content.replace(/^\s*[\!|\?]?\&gt;\s*(\[[\!|\?]\])?\s*(.*)$/m, function(match, p1, p2) { return p2;});
+    return ("<p class=\"" + className + "\">" + content + "</p>");
   }
 
   function theme(color) {
@@ -7673,9 +7678,9 @@
         isCenter = true;
         return p1 + p2;
       });
-      if (/^\s*!&gt;/.test(text)) {
+      if (/^\s*!&gt;/.test(text) || /^\s*&gt;\s*\[\!\]/.test(text)) {
         result = helper('tip', text);
-      } else if (/^\s*\?&gt;/.test(text)) {
+      } else if (/^\s*\?&gt;/.test(text) || /^\s*&gt;\s*\[\?\]/.test(text)) {
         result = helper('warn', text);
       } else {
         result = "<p" + (isCenter ? " style=\"text-align: center;\"" : "") + ">" + text + "</p>";
