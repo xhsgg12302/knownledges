@@ -64,6 +64,7 @@
                 *  [03-DQL](/docs/doc/framework/mysql/lesson/03_dql.md)
                 *  [LEARNING_DOC](/docs/doc/framework/mysql/mysql.md)
             - [INSTALL](/docs/doc/framework/mysql/install.md)
+            - [ANALYZE_TOOL](/docs/doc/framework/mysql/analyze_tools.md)
             - [ADVANCE](/docs/doc/framework/mysql/adv.md)
             - [RECORD](/docs/doc/framework/mysql/record.md)
             <!-- - [SPEC](/docs/doc/framework/mysql/spec.html) -->
