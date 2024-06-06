@@ -167,11 +167,12 @@
 						'</footer>',
 					].join('');
 
-					var discussion = '<hr style="border:none; height:3px; background-color:cadetblue;margin-top:120px"/><div class="giscus"></div>';
+					var hrDivisionLine = '<hr class="hr-division-line" style="overflow: visible; padding:0; border:none; border-top: medium double cadetblue; color: cadetblue; text-align:center; height: 4px; margin-top:120px; background-color: cadetblue;"/>';
+					var discussion = '<div class="giscus"></div>';
 
 					hook.afterEach(function(html) {
 						const subscription = ``;
-						return html + discussion + footer + subscription;
+						return html + hrDivisionLine + discussion + footer + subscription;
 					});
 
 					// 貌似代码过长会导致对齐差距越明显，暂时停用

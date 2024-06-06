@@ -222,3 +222,14 @@ details[open] summary {
     background-color: #f0f0f0; /* 背景色 */
     border-radius: 5px; /* 圆角 */
 }
+
+.hr-division-line:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 2em;
+    padding: 0 0.25em;
+    color: #333;
+    background: white;
+}
