@@ -169,7 +169,6 @@
             + [VIM](/docs/devops/os/softwares/vim/)
                 - [BOOK](/docs/devops/os/softwares/vim/book/)
                     * [PLACEHOLDER](/docs/devops/os/softwares/vim/book/README.md)
-                - [VIMTUTOR](/docs/devops/os/softwares/vim/vimtutor.md)
                 - [VIM_BAK](/docs/devops/os/softwares/vim/vim.md)
             + [JETBRAINS](/docs/devops/os/softwares/jetbrains/)
                 - [IDEA](/docs/devops/os/softwares/jetbrains/idea-env.md)
