@@ -64,6 +64,7 @@
                 *  [01-DATABASE_RELATED_CONCEPTS](/docs/doc/framework/mysql/lesson/01_database_related_concepts.md)
                 *  [02-FUNCTION](/docs/doc/framework/mysql/lesson/02_function.md)
                 *  [03-DQL](/docs/doc/framework/mysql/lesson/03_dql.md)
+                *  [05-DDL](/docs/doc/framework/mysql/lesson/05_ddl.md)
                 *  [LEARNING_DOC](/docs/doc/framework/mysql/mysql.md)
             - [INSTALL](/docs/doc/framework/mysql/install.md)
             - [ANALYZE_TOOL](/docs/doc/framework/mysql/analyze_tools.md)
