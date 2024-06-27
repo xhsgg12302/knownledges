@@ -80,7 +80,9 @@
             - [SPECIFICATION](/docs/doc/framework/mysql/specification.md)
 
         + [SPRING](/docs/doc/framework/spring/)
-            - [SPRING](/docs/doc/framework/spring/spring.md)
+            - [SPRINGCORE](/docs/doc/framework/spring/springcore/)
+                * [01-FACTORY-BEAN](/docs/doc/framework/spring/springcore/01_factory_bean.md)
+                * [SPRINGCORE_RW](/docs/doc/framework/spring/springcore/spring-bak.md)
             - [SPRINGMVC](/docs/doc/framework/spring/springmvc.md)
             - [SPRINGBOOT](/docs/doc/framework/spring/springboot.md)
             - [SPRINTCLOUD](/docs/doc/framework/spring/springcloud/)
