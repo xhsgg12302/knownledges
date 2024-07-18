@@ -81,6 +81,7 @@
 
         + [SPRING](/docs/doc/framework/spring/)
             - [SPRINGCORE](/docs/doc/framework/spring/springcore/)
+                * [00-STARTUP](/docs/doc/framework/spring/springcore/00_spring_startup.md)
                 * [01-FACTORY-BEAN](/docs/doc/framework/spring/springcore/01_factory_bean.md)
                 * [SPRINGCORE_RW](/docs/doc/framework/spring/springcore/spring-bak.md)
             - [SPRINGMVC](/docs/doc/framework/spring/springmvc.md)
