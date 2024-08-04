@@ -13,6 +13,8 @@
             - [HASHMAP](/docs/doc/base/collection_map/hashmap.md)
         + [EXCEPTION](/docs/doc/base/exception.md)
         + [AQS](/docs/doc/base/AQS.md)
+        + [MISC](/docs/doc/base/misc/)
+            - [PROPERTIES](/docs/doc/base/misc/properties.md)
 
 	- [ADVANCE](/docs/doc/advance/)
         + [JAVA AGENT](/docs/doc/advance/javaagent.md)
