@@ -103,7 +103,8 @@
             - [INSTALL](/docs/doc/framework/zookeeper/install.md)
             - [ZOOKEEPER_RW](/docs/doc/framework/zookeeper/zk.md)
         + [ELASTICSEARCH](/docs/doc/framework/es/es.md)
-        + [TOMCAT](/docs/doc/framework/tomcat/tomcat.md)
+        + [TOMCAT](/docs/doc/framework/tomcat/)
+            - [TOMCAT-CORE](/docs/doc/framework/tomcat/tomcat-core.md)
         
         + [MQ](/docs/doc/framework/mq/)
             - [ACTIVEMQ](/docs/doc/framework/mq/activemq/)
