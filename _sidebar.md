@@ -182,7 +182,6 @@
             + [VIM](/docs/devops/os/softwares/vim/)
                 - [BOOK](/docs/devops/os/softwares/vim/book/)
                     * [PLACEHOLDER](/docs/devops/os/softwares/vim/book/README.md)
-                - [VIM_BAK](/docs/devops/os/softwares/vim/vim.md)
             + [JETBRAINS](/docs/devops/os/softwares/jetbrains/)
                 - [IDEA](/docs/devops/os/softwares/jetbrains/idea-env.md)
                 - [CLION](/docs/devops/os/softwares/jetbrains/clion-env.md)
