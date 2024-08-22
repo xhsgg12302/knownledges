@@ -233,3 +233,8 @@ details[open] summary {
     color: #333;
     background: white;
 }
+
+/* 控制alert上边距 */
+.alert {
+    margin: 1.2em 0
+}
