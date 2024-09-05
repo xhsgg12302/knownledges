@@ -159,8 +159,8 @@
         * [TUN/TAP](/docs/devops/network/tun-tap.md)
     - [OS](/docs/devops/os/)
         * [SHELL](/docs/devops/os/shell/)
-            + [SYNTAX](/docs/devops/os/shell/syntax.md)
-            + [SHELL](/docs/devops/os/shell/command.md)
+            <!-- + [SYNTAX](/docs/devops/os/shell/syntax.md) -->
+            <!-- + [SHELL](/docs/devops/os/shell/command.md) -->
             + [RECORD](/docs/devops/os/shell/record.md)
         * [UTIL](/docs/devops/os/util/)
             + [ADB](/docs/devops/os/util/adb.md)
