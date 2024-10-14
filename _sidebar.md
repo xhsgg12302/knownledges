@@ -159,6 +159,9 @@
         * [DOCKER0](/docs/devops/network/docker0.md)
         * [TUN/TAP](/docs/devops/network/tun-tap.md)
     - [OS](/docs/devops/os/)
+        * [CORE](/docs/devops/os/core/)
+            + [FS](/docs/devops/os/core/fs/)
+                - [EXT2](/docs/devops/os/core/fs/ext2.md)
         * [SHELL](/docs/devops/os/shell/)
             <!-- + [SYNTAX](/docs/devops/os/shell/syntax.md) -->
             <!-- + [SHELL](/docs/devops/os/shell/command.md) -->
