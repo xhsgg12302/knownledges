@@ -151,6 +151,7 @@
             + [USAGE](/docs/devops/build/gradle/usage.md)
     - [NETWORK](/docs/devops/network/)
         * [SOCKET](/docs/devops/network/socket.md)
+        * [PROXY](/docs/devops/network/proxy.md)
         * [TCP](/docs/devops/network/tcp.md)
         * [HTTP](/docs/devops/network/http.md)
         * [DNS](/docs/devops/network/dns.md)
